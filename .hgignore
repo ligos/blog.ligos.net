@@ -1,0 +1,6 @@
+syntax: glob
+.gitignore
+node_modules
+public
+.git
+db.json

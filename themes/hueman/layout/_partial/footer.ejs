@@ -1,0 +1,17 @@
+<footer id="footer">
+  <% if (theme.sidebar === 'bottom'){ %>
+    <%- partial('_partial/sidebar') %>
+  <% } %>
+  <div class="container">
+    <div class="container-inner">
+      <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+      <div class="credit">
+        <h1 class="logo-wrap">
+          <a href="<%- url_for() %>" class="<%= theme.logo.use_text_logo ? "logo-text" : "logo" %>"><%= theme.logo.use_text_logo ? theme.title : "" %></a>
+        </h1>
+        <p>&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %> • <a href="http://creativecommons.org/licenses/by/4.0/deed.en_GB">CC BY 4.0</a></p>
+        <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. <em>Hueman</em> theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+      </div>
+    </div>
+  </div>
+</footer>

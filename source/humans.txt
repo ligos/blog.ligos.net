@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+	Murray Grant -- Everything -- blog@ligos.net                            
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+	node.js
+    Hexo
+	Markdown
+
