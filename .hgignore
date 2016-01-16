@@ -4,3 +4,4 @@ node_modules
 public
 .git
 db.json
+debug.log
