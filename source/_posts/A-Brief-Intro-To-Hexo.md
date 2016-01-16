@@ -1,6 +1,6 @@
 ---
 title: A Brief Intro To Hexo
-date: 2016-01-17 21:00:00
+date: 2016-01-16 23:30:00
 tags:
 - Hexo
 - Hexo-Bootstrap-Series
