@@ -1,5 +1,5 @@
 ---
-title: Getting Started With Hexo
+title: Installing Hexo
 date: 
 tags:
 - Hexo
@@ -9,6 +9,13 @@ tags:
 categories: Technical
 ---
 
+Part 2 of my Hexo Bootstrap Series: how to install Hexo and core configuration 
+
+<!-- more --> 
+
+In this post, we'll install everything needed to create a new Hexo blog, create the Hexo instance and finally
+
+For all posts in the series, check the **[Hexo-Bootstrap-Series](/tags/Hexo-Bootstrap-Series/)** tag.
 
 ## Basic installation
 
@@ -76,5 +83,7 @@ Config changes were pretty easy, just go through doco and change as you see fit.
 ```  
 
 * Fix non-secure urls
+
+* Register for Disquss to enable comments
 
 * Ensure Google site auth file isn't rendered

@@ -1,6 +1,7 @@
 ---
 title: A Brief Intro To Hexo
 date: 2016-01-17 21:00:00
+updated: 
 tags:
 - Hexo
 - Hexo-Bootstrap-Series
@@ -19,6 +20,8 @@ This will be a multi-part series of posts about Bootstrapping [Hexo](https://hex
 I'm working in a Windows environment (both for authoring and hosting), but much will carry over to Mac and Linux. 
 
 At the end, I'll have outlined how I went from deciding to use Hexo right through to having a live blog with several posts.
+
+For all posts in the series, check the **[Hexo-Bootstrap-Series](/tags/Hexo-Bootstrap-Series/)** tag.
 
 ## Why Hexo?
 
