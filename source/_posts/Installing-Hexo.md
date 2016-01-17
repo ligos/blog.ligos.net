@@ -13,16 +13,58 @@ Part 2 of my Hexo Bootstrap Series: how to install Hexo and core configuration
 
 <!-- more --> 
 
-In this post, we'll install everything needed to create a new Hexo blog, create the Hexo instance and finally
+In this post, we'll install everything needed to create a new Hexo blog:
+
+* Install node.js and git
+* Install the core Hexo commands
+* Create a Hexo blog instance
+* Install a theme
+* Install some plugins
+* Set your configuration
+* Test everything is working OK  
 
 For all posts in the series, check the **[Hexo-Bootstrap-Series](/tags/Hexo-Bootstrap-Series/)** tag.
 
+## Frameworks and Prerequisites
+
+If you don't already have them installed, you'll need [Node.js](https://nodejs.org) and [Git](http://www.git-scm.com/) to use Hexo.
+
+I grabbed the most current version of Git for Windows at the time (2.6.4).
+
+And, spent half and hour trying to make sense of Node.js's [new semantic versioning](http://stackoverflow.com/a/34169319) (apparently, they adopted IoJS's versions), before downloading the most current 4.x LTS series for Windows (4.2.4).
+
+Finally, install hexo itself via an admin command prompt `npm install -g hexo-cli`.
+
+[Hexo doc reference](https://hexo.io/docs/)
+
 ## Basic installation
 
-How do you get off the ground?
+Create a new folder somewhere and open a command prompt there (admin not required any more).
 
+Run `hexo init` and an `npm install` you'll get a bare bones Hexo instance.
+
+![Command line output from hexo init](/images/Installing-Hexo/hexo-init.png "hexo init; npm install")
+
+If you do a `hexo generate` at this point, you'll get a bunch of HTML files in a `public` folder.
+Unfortunately, you can't open these with a web browser directly from disk, you need a web server (the basic HTML files will load, but CSS and JavaScript won't).
+And Hexo's basic web server is now a separate plugin.
+
+[Hexo doc reference](https://hexo.io/docs/setup.html)
+
+## Install Web Server
+
+In your Hexo folder, run `npm install hexo-server --save` to install the web server component.
+
+Then do `hexo server --debug`, and you'll see a bunch of debug spew come up as it processes your files.
+You can now browse to `http://localhost:4000` to load the default site.
+
+[Hexo doc reference](https://hexo.io/docs/server.html)
+
+![Command line output from hexo server](/images/Installing-Hexo/hexo-server.png "hexo server --debug")
 
 ## Find a theme 
+
+TODO
 
 After looking through the themes decided on hueman as it looked pretty nice and is responsive.
  
@@ -43,6 +85,7 @@ Added config for each plugin to `_config.yml` for reference.
 
 Config changes were pretty easy, just go through doco and change as you see fit.  
 
+* Register for Disquss to enable comments
 
 ## Theme Changes in Code
 
@@ -82,8 +125,4 @@ Config changes were pretty easy, just go through doco and change as you see fit.
     text-decoration: none
 ```  
 
-* Fix non-secure urls
 
-* Register for Disquss to enable comments
-
-* Ensure Google site auth file isn't rendered
