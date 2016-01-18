@@ -1,6 +1,6 @@
 ---
 title: Installing Hexo
-date: 
+date: 2016-01-18 22:30:00 
 tags:
 - Hexo
 - Hexo-Bootstrap-Series
@@ -21,7 +21,7 @@ In this post, we'll install everything needed to create a new Hexo blog:
 * Install a theme
 * Install some plugins
 * Set your configuration
-* Test everything is working OK  
+* Make small changes to the theme layout  
 
 For all posts in the series, check the **[Hexo-Bootstrap-Series](/tags/Hexo-Bootstrap-Series/)** tag.
 
@@ -31,7 +31,7 @@ If you don't already have them installed, you'll need [Node.js](https://nodejs.o
 
 I grabbed the most current version of Git for Windows at the time (2.6.4).
 
-And, spent half and hour trying to make sense of Node.js's [new semantic versioning](http://stackoverflow.com/a/34169319) (apparently, they adopted IoJS's versions), before downloading the most current 4.x LTS series for Windows (4.2.4).
+Then spent half and hour trying to make sense of Node.js's [new semantic versioning](http://stackoverflow.com/a/34169319) (apparently, they adopted IoJS's versions), before downloading the most current 4.x LTS series for Windows (4.2.4).
 
 Finally, install hexo itself via an admin command prompt `npm install -g hexo-cli`.
 
@@ -124,13 +124,20 @@ I went with `YYYY-MM-DD/Article-Title.html`.
 
 Some other things to note:
 
-* `skip_render` - you'll need to add your Google Site auth file here, or it will be processed as any other html content (not what you want) (Bing's XML auth file is not processed though, so you don't need to add it).
+* `skip_render` - You'll need to add your Google Site auth file here, or it will be processed as any other html content (not what you want) (Bing's XML auth file is not processed though, so you don't need to add it).
 * `marked.breaks` - I prefer my Markdown not to insert line breaks unless I leave a blank line (makes version control work better). So I set this to false. 
+* `highlight.line_number` - I'm not a fan of line numbers against source code. So I changed this to false. 
+
 
 ## Theme Changes in Code
 
 Finally, there were a few things I wanted to change in the theme code.
 Obviously, this is specific to the *hueman* theme, but I'm sure you'll find similar small things for whichever theme you chose too.
+
+These changes are definitely not for someone who just wants to churn out content.
+So no shame in ignoring this whole section.
+
+But as a professional web developer, they're well within my capability. 
 
 From easiest to hardest, here are the three changes I made.
 
