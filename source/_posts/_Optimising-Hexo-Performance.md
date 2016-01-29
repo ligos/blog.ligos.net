@@ -8,3 +8,5 @@ categories:
 * Performance
 * Bandwidth
 * Security
+
+* HSTS

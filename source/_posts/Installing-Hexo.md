@@ -1,6 +1,7 @@
 ---
 title: Installing Hexo
 date: 2016-01-18 22:30:00 
+updated: 2016-01-19 20:00:00
 tags:
 - Hexo
 - Hexo-Bootstrap-Series
@@ -34,6 +35,8 @@ I grabbed the most current version of Git for Windows at the time (2.6.4).
 Then spent half and hour trying to make sense of Node.js's [new semantic versioning](http://stackoverflow.com/a/34169319) (apparently, they adopted IoJS's versions), before downloading the most current 4.x LTS series for Windows (4.2.4).
 
 Finally, install hexo itself via an admin command prompt `npm install -g hexo-cli`.
+
+(Note that you don't need to install these on your server, just your own computer).
 
 [Hexo doc reference](https://hexo.io/docs/)
 
