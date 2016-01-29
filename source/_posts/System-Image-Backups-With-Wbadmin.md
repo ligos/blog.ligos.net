@@ -1,6 +1,6 @@
 ---
 title: System Image Backups with WbAdmin
-date:
+date: 2016-01-24
 tags:
 - Backup
 - Windows
