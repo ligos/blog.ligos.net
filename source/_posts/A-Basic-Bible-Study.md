@@ -15,7 +15,7 @@ The Bible study template I use each week.
 Bible Study has started again for 2016.
 I lead a group of about 6-8 people to read a passage from the Bible, discuss it, think about how it applies to us, and then pray for one another (and others outside the group too).
 
-As I'm busy doing too many things through the week, here's the [template](/A-Basic-Bible-Study/Bible-Study-Template.pdf) I work through each week.
+As I'm busy doing too many things through the week, here's the [template](/images/A-Basic-Bible-Study/Bible-Study-Template.pdf) I work through each week.
 
 The main aim is to get people to engage with the Bible itself (as opposed to current family situation, random goings on at work, or tangents arising from the passage).
 
