@@ -1,7 +1,7 @@
 ---
 title: Logging Metadata on Free WiFi
 date: 2016-02-15 22:40:00  
-updated: 
+updated: 2016-02-16 16:00:00 
 tags:
 - WiFi
 - Metadata
@@ -214,9 +214,18 @@ Which means, even if someone was to pick steal the PC (or download everything vi
 
 This is what encryption of [data at rest](https://en.wikipedia.org/wiki/Data_at_rest) is all about!    
 
-Finally, these encrypted files are mirrored offsite via SCP/SFTP.
-(The way you archive things over 10+ years is keep lots of redundent copies.)
+Finally, these encrypted files are mirrored offsite via SCP/SFTP (using a [WinSCP script](http://winscp.net/eng/docs/scripting)).
+(The way you archive things over 10+ years is keep lots of redundant copies.)
 
+
+```
+open  sftp://my.church.com.au/ -privatekey="X:\ChurchInternetLogs\remote.ppk" -hostkey="ssh-rsa 2048 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00"
+synchronize local -mirror -transfer=binary X:\ChurchInternetLogs\internet_traffic_archive /srv/usage_logs/internet_traffic_archive
+synchronize local -mirror -transfer=binary X:\ChurchInternetLogs\syslog /srv/usage_logs/syslog
+synchronize local -mirror -transfer=binary X:\ChurchInternetLogs\nfdump /srv/usage_logs/nfdump
+
+exit
+```
 
 ## IPv6 
 
