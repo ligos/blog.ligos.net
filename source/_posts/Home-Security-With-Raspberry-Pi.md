@@ -131,6 +131,21 @@ Which isn't entirely unexpected, because the mailboxes are poorly lit.
 Even with the [NoIR camera](https://www.raspberrypi.org/products/pi-noir-camera/), the images are a washed out mess and the camera continually detects motion during darkness.
 Improvement on this front would likely need an array of IR LEDs to improve lighting.  
 
+### Privacy
+
+This deserves its own heading, because its a big one.
+
+I now catch every random person who passes by the front of our unit block on camera.
+Which is a non-trivial number of people.
+
+With no consent or warning.
+
+Now I know you can't expect privacy when walking in a public place, but I don't like it at all.
+Because it opens me up to all kinds of liability if the pictures [leak off my computer](https://www.shodan.io/).
+
+Without a reason to put the camera there (mailboxes mysteriously opening themselves), I would not even consider this.
+And I hope to be able to take the camera down in a few weeks once the issue is resolved.
+
  
 ## End Result
 
