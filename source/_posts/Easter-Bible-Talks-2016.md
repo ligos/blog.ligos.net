@@ -1,6 +1,6 @@
 ---
 title: Easter Bible Talks 2016
-date:  
+date: 2016-04-01 20:00:00
 tags:
 - Bible
 - Bible Talk
