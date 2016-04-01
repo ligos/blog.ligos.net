@@ -233,7 +233,7 @@ But otherwise, totally uneventful.
 And in no way does the opposition undermine the Easter message.
 
 They come in from different gospels, written by different authors, targeting different audiences, reflecting Jesus in different contexts.
-So it should come as no surprise that different images and metaphores are used.
+So it should come as no surprise that different images and metaphors are used.
 
 One very important difference to note is that *the cup* is about wrath and judgement,
 while *Jesus' thirsts* is about Jesus going without.
@@ -243,4 +243,4 @@ The *going without* part is what that the wrath from *the cup* looks like in rea
 
 Easter is when Christians remember and reflect on Jesus' act of service for humanity, dying in our place and rising in glory.
 
-And no matter what the metaphore used, that's a fantastic act!
+And no matter what the metaphor used, that's a fantastic act!
