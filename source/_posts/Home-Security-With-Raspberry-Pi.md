@@ -1,6 +1,7 @@
 ---
 title: Home Security With Raspberry Pi
 date: 2016-03-13 22:30:00 
+updated: 2016-04-17 22:30:00
 tags:
 - Raspberry Pi
 - Security
@@ -14,6 +15,8 @@ categories: Technical
 A quick guide to setting a Raspberry Pi as a home security camera.
 
 <!-- more --> 
+
+**UPDATE:** You may want to refer to a more complex, but better performing, setup [using your Pi as a Fast Network Camera / MJPEG Stream](/2016-04-17/RaspberryPi-As-A-Simple-MJPEG-Camera.html), and motion detection on a different computer.  
 
 In our unit block, there are suspicions that someone is stealing mail from our mailboxes.
 So I decided to move my [Raspberry Pi](https://www.raspberrypi.org/) home security camera to keep photos of that area.
