@@ -1,6 +1,7 @@
 ---
 title: About
 date: 2016-01-10 22:30:00
+updated: 2016-09-06
 comments: false 
 ---
 
@@ -30,12 +31,21 @@ Code snip-its (that is, small chunks of code included in-line in posts) are lice
 
 Whole source code files, or even projects, will come with their own license, clearly marked at the top of the file or project (usually the [Apache](https://www.apache.org/licenses/LICENSE-2.0) license). 
 
+## Employer Disclaimer
+
+The content on this site represents the personal views and works of Murray Grant only.
+It does not represent the views, policies, opinions or works of any company I have worked for past, present or future.
+This includes (and is not limited to) [Wise Owl Legal](http://www.wiseowllegal.com.au/), [Far Edge Technology](http://faredge.com.au/) and [Innovent Software](http://www.innoventsoftware.com.au/).
+
 ## Terms Of Use
 This site is available for public consumption under the assumption that it provides useful information (yes, this is a big assumption!).
 If you find the site is not useful, you are advised to stop using it.
 
-There is no warrent of fitness or guarentee of service implied or expressed. 
+There is no warrant of fitness or guarantee of service implied or expressed. 
 The site is made available on a best effort basis, as is. It may be unavailable without warning.
+
+The content of the site is not guaranteed to function in any environment and is provided on an AS IS basis.
+The reader must evaluate any code, recommendations, processes, procedures or policies presented on this site to determine fitness for their own situation.  
 
 The author reserves the right to discontinue the site and remove it without warning or prior notice.
 
