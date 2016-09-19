@@ -126,6 +126,7 @@ links:
 
 # Miscellaneous
 google_analytics:
+use_google_apis: true
 #favicon: /favicon.png
 disqus_shortname: murraysblog
 
