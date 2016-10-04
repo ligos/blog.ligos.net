@@ -1,5 +1,5 @@
 ---
-title: Optimising-Hexo-Performance
+title: Optimising Hexo Performance
 date:
 tags:
 categories:
@@ -9,4 +9,5 @@ categories:
 * Bandwidth
 * Security
 
+* HTTPS redirect
 * HSTS
