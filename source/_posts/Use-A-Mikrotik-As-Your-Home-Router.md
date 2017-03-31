@@ -1,7 +1,7 @@
 ---
 title: Use a Mikrotik as Your Home Router
 date: 2017-02-16
-updated: 
+updated: 2017-04-01
 tags:
 - Mikrotik
 - Router
@@ -789,8 +789,12 @@ Configuring queues and QoS is really hard, and I've never managed to understand 
 In the end, I've just created a few simple queues which make sure no single network can use all my (terribly limited) Internet bandwidth.
 I'm sure there are better solutions, but this is good enough for me.
 
-One helpful tip though: create a new *queue type* with a larger queue size (I'm using 200, instead of the default of 10), this will not drop as many packets while still restricting bandwidth. 
+~~One helpful tip though: create a new *queue type* with a larger queue size (I'm using 200, instead of the default of 10), this will not drop as many packets while still restricting bandwidth.~~
 
+**Update (1/Apr/2017):** A more helpful tip is not to use *fifo* queues when you have limited bandwidth; that causes [buffer bloat](https://www.bufferbloat.net/projects/) and dramatically increases latency.
+Instead, use the *sfq* or *pcq* kinds.
+You'll need to create new queue types for these as they aren't configured out of the box.
+The *sfq* and *pcq* algorithms still restrict bandwidth, but do it in a fairer way, so the latency of individual connections isn't completely terrible.
 
 
 ## Conclusion
