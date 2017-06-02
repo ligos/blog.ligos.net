@@ -1,0 +1,118 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 Starting BigCrush
+                 Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   Alpha =        0,   Beta  =   0.0625
+
+
+-----------------------------------------------
+Number of degrees of freedom          :  232
+Chi-square statistic                  :  263.55
+p-value of test                       :    0.08
+
+-----------------------------------------------
+CPU time used                    :  00:02:14.94
+
+Generator state:
+ 255986273824  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r = 25,   Alpha =        0,   Beta  =  0.03125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :  434
+Chi-square statistic                  :  423.23
+p-value of test                       :    0.64
+
+-----------------------------------------------
+CPU time used                    :  00:03:10.99
+
+Generator state:
+ 563166512320  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r =  0,   Alpha =        0,   Beta  = 0.0078125
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 1437
+Chi-square statistic                  : 1497.32
+p-value of test                       :    0.13
+
+-----------------------------------------------
+CPU time used                    :  00:03:05.06
+
+Generator state:
+ 972764958432  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 20,   Alpha =        0,   Beta  = 0.000976562
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 7046
+Chi-square statistic                  : 7268.71
+p-value of test                       :    0.03
+
+-----------------------------------------------
+CPU time used                    :  00:03:20.58
+
+Generator state:
+ 1300531237280  bits have been read.
+
+
+
+
+
+========= Summary results of BigCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        ufile_CreateReadBin
+ Number of statistics:  4
+ Total CPU time:   00:11:51.59
+
+ All tests were passed
+
+
+

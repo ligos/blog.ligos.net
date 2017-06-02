@@ -1,0 +1,66 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 Starting BigCrush
+                 Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+svaria_SampleCorr test:
+-----------------------------------------------
+   N =  1,  n = 2000000000,  r =  0,   k = 1
+
+
+-----------------------------------------------
+Normal statistic                      :   -0.98
+p-value of test                       :    0.84
+
+-----------------------------------------------
+CPU time used                    :  00:01:04.23
+
+Generator state:
+ 64000000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+svaria_SampleCorr test:
+-----------------------------------------------
+   N =  1,  n = 2000000000,  r =  0,   k = 2
+
+
+-----------------------------------------------
+Normal statistic                      :    0.75
+p-value of test                       :    0.23
+
+-----------------------------------------------
+CPU time used                    :  00:00:47.67
+
+Generator state:
+ 128000000000  bits have been read.
+
+
+
+
+
+========= Summary results of BigCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        ufile_CreateReadBin
+ Number of statistics:  2
+ Total CPU time:   00:01:51.90
+
+ All tests were passed
+
+
+

@@ -1,0 +1,35 @@
+File: m:\random.256g.bin
+DFT test: sequence length truncated to 16777216 bits
+
+n= 33554432 bits (32.000 Mb)     Started: 2017-05-22 20:25:09
+
+
+ = CPU time taken by each test [h:m:s.d, %] =
+                              DFT  0:30:24.75   21.7%
+                             AMLS  0:23:20.50   16.6%
+                        Partition  0:14:51.06   10.6%
+                             Rank  0:13:49.64    9.8%
+         Windowed autocorrelation  0:13:30.75    9.6%
+                           Serial  0:08:07.27    5.8%
+                     Short blocks  0:06:38.02    4.7%
+Non overlapping template matching  0:05:03.36    3.6%
+                             Runs  0:04:22.58    3.1%
+                        Collision  0:03:14.08    2.3%
+                  Random walk 1-D  0:02:20.83    1.7%
+                           Weight  0:02:13.59    1.6%
+                             Peak  0:02:13.52    1.6%
+                  Random walk 2-D  0:02:00.58    1.4%
+                      Permutation  0:01:40.56    1.2%
+                           Maurer  0:01:05.42    0.8%
+               Block gap distance  0:00:57.09    0.7%
+    Overlapping template matching  0:00:54.34    0.6%
+                 Coupon collector  0:00:52.58    0.6%
+                      Long blocks  0:00:37.61    0.4%
+                    Blocks'n'gaps  0:00:33.44    0.4%
+              Overlapping entropy  0:00:31.63    0.4%
+                   Serial two-bit  0:00:25.34    0.3%
+                   Cumulative sum  0:00:21.19    0.3%
+             Random walk distance  0:00:17.14    0.2%
+                  Total CPU time:  2:20:26.86 (CPU load: 46.4%)
+
+Testing phase duration: 1:15:45.15

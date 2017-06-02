@@ -1,0 +1,3326 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 Starting Crush
+                 Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+***********************************************************
+Test smarsa_SerialOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   d = 4096,   t =  2,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =           16777216
+       Expected number per cell =   29.802322
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =     0.01677312,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 16773120
+Value of the statistic                : 1.68e+7
+p-value of test                       :    0.76
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:53.12
+
+Generator state:
+ 16000000000  bits have been read.
+
+
+
+
+***********************************************************
+Test smarsa_SerialOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r =  0,   d =   64,   t =  4,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =           16777216
+       Expected number per cell =   17.881393
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =    0.027525119,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 16515072
+Value of the statistic                : 1.65e+7
+p-value of test                       :    0.71
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:10.94
+
+Generator state:
+ 25600000000  bits have been read.
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d = 1048576,   t =  2,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         :      454
+p-value of test                       :    0.50
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278214
+  j =  1                              :         99999092
+  j =  2                              :              454
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:01:19.30
+
+Generator state:
+ 28800000000  bits have been read.
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r = 10,   d = 1048576,   t =  2,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         :      437
+p-value of test                       :    0.79
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278197
+  j =  1                              :         99999126
+  j =  2                              :              437
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:01:17.81
+
+Generator state:
+ 32000000000  bits have been read.
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d = 1024,   t =  4,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         :      451
+p-value of test                       :    0.56
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278211
+  j =  1                              :         99999098
+  j =  2                              :              451
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:01:42.18
+
+Generator state:
+ 35200000000  bits have been read.
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r = 20,   d = 1024,   t =  4,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         :      456
+p-value of test                       :    0.48
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278216
+  j =  1                              :         99999088
+  j =  2                              :              456
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:01:42.96
+
+Generator state:
+ 38400000000  bits have been read.
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d =   32,   t =  8,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         :      447
+p-value of test                       :    0.63
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278207
+  j =  1                              :         99999106
+  j =  2                              :              447
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:01:42.21
+
+Generator state:
+ 41600000000  bits have been read.
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r = 25,   d =   32,   t =  8,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         :      483
+p-value of test                       :    0.10
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278243
+  j =  1                              :         99999034
+  j =  2                              :              483
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:01:42.79
+
+Generator state:
+ 44800000000  bits have been read.
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d =    4,   t = 20,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.74
+Observed number of collisions         :      426
+p-value of test                       :    0.91
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278186
+  j =  1                              :         99999148
+  j =  2                              :              426
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:01:42.11
+
+Generator state:
+ 48000000000  bits have been read.
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r = 28,   d =    4,   t = 20,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.74
+Observed number of collisions         :      437
+p-value of test                       :    0.79
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278197
+  j =  1                              :         99999126
+  j =  2                              :              437
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:01:41.84
+
+Generator state:
+ 51200000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  5,  n = 20000000,  r =  0,    d = 2147483648,    t = 2,    p = 1
+
+
+      Number of cells = d^t = 4611686018427387904
+      Lambda = Poisson mean =     433.6809
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    2168.40
+Total observed number                 :    2113
+p-value of test                       :    0.88
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:14.94
+
+Generator state:
+ 57600000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  5,  n = 20000000,  r =  0,    d = 2097152,    t = 3,    p = 1
+
+
+      Number of cells = d^t = 9223372036854775808
+      Lambda = Poisson mean =     216.8404
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    1084.20
+Total observed number                 :    1062
+p-value of test                       :    0.74
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:18.68
+
+Generator state:
+ 67200000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  5,  n = 20000000,  r =  0,    d = 65536,    t = 4,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     108.4202
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     542.10
+Total observed number                 :     529
+p-value of test                       :    0.70
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:21.90
+
+Generator state:
+ 80000000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  3,  n = 20000000,  r =  0,    d = 512,    t = 7,    p = 1
+
+
+      Number of cells = d^t = 9223372036854775808
+      Lambda = Poisson mean =     216.8404
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     650.52
+Total observed number                 :     657
+p-value of test                       :    0.40
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:53.66
+
+Generator state:
+ 93440000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  3,  n = 20000000,  r =  7,    d = 512,    t = 7,    p = 1
+
+
+      Number of cells = d^t = 9223372036854775808
+      Lambda = Poisson mean =     216.8404
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     650.52
+Total observed number                 :     699
+p-value of test                       :    0.03
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:54.13
+
+Generator state:
+ 106880000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  3,  n = 20000000,  r = 14,    d = 256,    t = 8,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     108.4202
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     325.26
+Total observed number                 :     327
+p-value of test                       :    0.47
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:56.09
+
+Generator state:
+ 122240000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  3,  n = 20000000,  r = 22,    d = 256,    t = 8,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     108.4202
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     325.26
+Total observed number                 :     326
+p-value of test                       :    0.49
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:55.68
+
+Generator state:
+ 137600000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N = 10,  n = 2000000,  r =  0,  t = 2,  p = 0,  m = 30,  Torus =  TRUE
+
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :    0.49
+p-value of test                       :    0.75
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :    0.38
+p-value of test                       :    0.86
+
+Test on the Nm values of W_{n,i}(mNP1):    0.41
+p-value of test                       :    0.84
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     300
+Number of jumps of Y                  :     295
+p-value of test                       :    0.60
+
+Stat. AD (mNP2)                       :    0.88
+p-value of test                       :    0.43
+
+-----------------------------------------------
+CPU time used                    :  00:00:26.35
+
+Generator state:
+ 138880000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N = 10,  n = 2000000,  r =  0,  t = 3,  p = 0,  m = 30,  Torus =  TRUE
+
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :    0.27
+p-value of test                       :    0.96
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :    0.75
+p-value of test                       :    0.52
+
+Test on the Nm values of W_{n,i}(mNP1):    0.41
+p-value of test                       :    0.84
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     300
+Number of jumps of Y                  :     295
+p-value of test                       :    0.60
+
+Stat. AD (mNP2)                       :    0.44
+p-value of test                       :    0.81
+
+Stat. AD after spacings (mNP2-S)      :    0.73
+p-value of test                       :    0.54
+
+-----------------------------------------------
+CPU time used                    :  00:00:38.16
+
+Generator state:
+ 140800000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N =  5,  n = 2000000,  r =  0,  t = 7,  p = 0,  m = 30,  Torus =  TRUE
+
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :    1.21
+p-value of test                       :    0.26
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :    0.46
+p-value of test                       :    0.78
+
+Test on the Nm values of W_{n,i}(mNP1):    0.33
+p-value of test                       :    0.92
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     150
+Number of jumps of Y                  :     155
+p-value of test                       :    0.35
+
+Stat. AD (mNP2)                       :    1.52
+p-value of test                       :    0.17
+
+Stat. AD after spacings (mNP2-S)      :    2.50
+p-value of test                       :    0.05
+
+-----------------------------------------------
+CPU time used                    :  00:01:10.81
+
+Generator state:
+ 143040000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+snpair_ClosePairsBitMatch test:
+-----------------------------------------------
+   N =  4,  n = 4000000,  r =  0,  t = 2
+
+
+-----------------------------------------------
+Max of all bit distances              :   22.00
+p-value of test                       :    0.37
+
+-----------------------------------------------
+CPU time used                    :  00:00:26.76
+
+Generator state:
+ 144064000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+snpair_ClosePairsBitMatch test:
+-----------------------------------------------
+   N =  2,  n = 4000000,  r =  0,  t = 4
+
+
+-----------------------------------------------
+Max of all bit distances              :   10.00
+p-value of test                       :    0.60
+
+-----------------------------------------------
+CPU time used                    :  00:00:24.68
+
+Generator state:
+ 145088000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r =  0,   d =   16,   k =   16
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   12
+Chi-square statistic                  :    3.32
+p-value of test                       :    0.9928
+
+-----------------------------------------------
+CPU time used                    :  00:00:31.18
+
+Generator state:
+ 165568000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r = 26,   d =   16,   k =   16
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   12
+Chi-square statistic                  :    8.30
+p-value of test                       :    0.76
+
+-----------------------------------------------
+CPU time used                    :  00:00:38.10
+
+Generator state:
+ 186048000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   d =   64,   k =   64
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   23
+Chi-square statistic                  :   20.62
+p-value of test                       :    0.60
+
+-----------------------------------------------
+CPU time used                    :  00:00:31.38
+
+Generator state:
+ 206528000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 24,   d =   64,   k =   64
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   23
+Chi-square statistic                  :   15.63
+p-value of test                       :    0.87
+
+-----------------------------------------------
+CPU time used                    :  00:00:37.68
+
+Generator state:
+ 227008000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r =  0,   d =    4
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   51
+Chi-square statistic                  :   58.00
+p-value of test                       :    0.23
+
+-----------------------------------------------
+CPU time used                    :  00:00:16.90
+
+Generator state:
+ 237674471456  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r = 28,   d =    4
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   51
+Chi-square statistic                  :   42.76
+p-value of test                       :    0.79
+
+-----------------------------------------------
+CPU time used                    :  00:00:18.94
+
+Generator state:
+ 248341076064  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   d =   16
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   51.04
+p-value of test                       :    0.28
+
+-----------------------------------------------
+CPU time used                    :  00:00:22.08
+
+Generator state:
+ 264137558784  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 26,   d =   16
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   74.03
+p-value of test                       :  5.5e-3
+
+-----------------------------------------------
+CPU time used                    :  00:00:25.07
+
+Generator state:
+ 279936250592  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r =  0,   Alpha =        0,   Beta  =    0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :  106
+Chi-square statistic                  :   99.64
+p-value of test                       :    0.66
+
+-----------------------------------------------
+CPU time used                    :  00:00:25.06
+
+Generator state:
+ 305534031200  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r = 27,   Alpha =        0,   Beta  =    0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :  106
+Chi-square statistic                  :  106.49
+p-value of test                       :    0.47
+
+-----------------------------------------------
+CPU time used                    :  00:00:27.55
+
+Generator state:
+ 331129983168  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 5000000,  r =  0,   Alpha =        0,   Beta  = 0.00390625
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 1936
+Chi-square statistic                  : 1926.74
+p-value of test                       :    0.55
+
+-----------------------------------------------
+CPU time used                    :  00:00:36.66
+
+Generator state:
+ 372090503712  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 5000000,  r = 22,   Alpha =        0,   Beta  = 0.00390625
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 1936
+Chi-square statistic                  : 1940.89
+p-value of test                       :    0.46
+
+-----------------------------------------------
+CPU time used                    :  00:00:37.88
+
+Generator state:
+ 413032244960  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sknuth_Run test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   Up =  TRUE
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    6
+Chi-square statistic                  :    4.95
+p-value of test                       :    0.55
+
+-----------------------------------------------
+CPU time used                    :  00:00:19.58
+
+Generator state:
+ 429032244960  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sknuth_Run test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r = 15,   Up = FALSE
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    6
+Chi-square statistic                  :    3.44
+p-value of test                       :    0.75
+
+-----------------------------------------------
+CPU time used                    :  00:00:23.01
+
+Generator state:
+ 445032244960  bits have been read.
+
+
+
+
+***********************************************************
+Test sknuth_Permutation calling smultin_Multinomial
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 50000000,  r =  0,   t = 10,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =            3628800
+       Expected number per cell =    13.77866
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =     0.03628799,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 3628799
+Value of the statistic                : 3.63e+6
+p-value of test                       :    0.04
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:50.75
+
+Generator state:
+ 461032244960  bits have been read.
+
+
+
+
+***********************************************************
+Test sknuth_Permutation calling smultin_Multinomial
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 50000000,  r = 15,   t = 10,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =            3628800
+       Expected number per cell =    13.77866
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =     0.03628799,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 3628799
+Value of the statistic                : 3.63e+6
+p-value of test                       :    0.34
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:54.96
+
+Generator state:
+ 477032244960  bits have been read.
+
+
+
+
+***********************************************************
+Test sknuth_CollisionPermut calling smultin_Multinomial
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  5,  n = 10000000,  r =  0,   t = 13,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =         6227020800
+       Expected number per cell =  1 /  622.70208
+       EColl = n^2 / (2k) =  8029.521918
+       Hashing =   TRUE
+
+       Collision test,    Mu =      8025.2245,    Sigma =    89.5098
+
+-----------------------------------------------
+Test Results for Collisions
+
+For the total number of collisions, we use
+      the Poisson approximation:
+Expected number of collisions = N*Mu  :    40126.12
+Observed number of collisions         :    40021
+p-value of test                       :    0.70
+
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :      31085144021
+  j =  1                              :         49919984
+  j =  2                              :            39969
+  j =  3                              :               26
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:01:31.44
+
+Generator state:
+ 497832244960  bits have been read.
+
+
+
+
+***********************************************************
+Test sknuth_CollisionPermut calling smultin_Multinomial
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  5,  n = 10000000,  r = 15,   t = 13,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =         6227020800
+       Expected number per cell =  1 /  622.70208
+       EColl = n^2 / (2k) =  8029.521918
+       Hashing =   TRUE
+
+       Collision test,    Mu =      8025.2245,    Sigma =    89.5098
+
+-----------------------------------------------
+Test Results for Collisions
+
+For the total number of collisions, we use
+      the Poisson approximation:
+Expected number of collisions = N*Mu  :    40126.12
+Observed number of collisions         :    40154
+p-value of test                       :    0.45
+
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :      31085144154
+  j =  1                              :         49919712
+  j =  2                              :            40114
+  j =  3                              :               20
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:01:32.80
+
+Generator state:
+ 518632244960  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d = 100000,   t =  5
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Test results for chi2 with 99999 degrees of freedom:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.12
+p-value of test                       :    0.71
+
+Kolmogorov-Smirnov- statistic = D-    :    0.12
+p-value of test                       :    0.70
+
+Anderson-Darling statistic = A2       :    0.23
+p-value of test                       :    0.98
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 999990
+Chi-square statistic                  : 1.00e+6
+p-value of test                       :    0.60
+
+
+-----------------------------------------------
+Test results for Anderson-Darling:
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.092
+p-value of test                       :    0.80
+
+Kolmogorov-Smirnov- statistic = D-    :    0.30
+p-value of test                       :    0.13
+
+Anderson-Darling statistic = A2       :    1.06
+p-value of test                       :    0.32
+
+
+-----------------------------------------------
+CPU time used                    :  00:02:01.11
+
+Generator state:
+ 534632244960  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N =  5,  n = 10000000,  r =  0,   d = 100000,   t = 10
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Test results for chi2 with 99999 degrees of freedom:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.34
+p-value of test                       :    0.26
+
+Kolmogorov-Smirnov- statistic = D-    :    0.24
+p-value of test                       :    0.50
+
+Anderson-Darling statistic = A2       :    0.53
+p-value of test                       :    0.71
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 499995
+Chi-square statistic                  : 5.00e+5
+p-value of test                       :    0.55
+
+
+-----------------------------------------------
+Test results for Anderson-Darling:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.32
+p-value of test                       :    0.31
+
+Kolmogorov-Smirnov- statistic = D-    :    0.22
+p-value of test                       :    0.54
+
+Anderson-Darling statistic = A2       :    0.84
+p-value of test                       :    0.45
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:10.19
+
+Generator state:
+ 550632244960  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   d = 100000,   t = 20
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 99999
+Chi-square statistic                  : 1.01e+5
+p-value of test                       :  1.8e-3
+
+
+-----------------------------------------------
+Anderson-Darling statistic            :    0.92
+p-value of test                       :    0.08
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:16.78
+
+Generator state:
+ 557032244960  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   d = 100000,   t = 30
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 99999
+Chi-square statistic                  : 1.00e+5
+p-value of test                       :    0.36
+
+
+-----------------------------------------------
+Anderson-Darling statistic            :    0.36
+p-value of test                       :    0.64
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:19.53
+
+Generator state:
+ 566632244960  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+svaria_SampleProd test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   t = 10
+
+
+-----------------------------------------------
+Anderson-Darling statistic            :    0.77
+p-value of test                       :    0.23
+
+-----------------------------------------------
+CPU time used                    :  00:00:10.65
+
+Generator state:
+ 569832244960  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+svaria_SampleProd test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   t = 30
+
+
+-----------------------------------------------
+Anderson-Darling statistic            :    0.22
+p-value of test                       :    0.78
+
+-----------------------------------------------
+CPU time used                    :  00:00:19.92
+
+Generator state:
+ 579432244960  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+svaria_SampleMean test:
+-----------------------------------------------
+   N = 10000000,  n = 20,  r =  0
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    : 3.47e-4
+p-value of test                       :    0.09
+
+Kolmogorov-Smirnov- statistic = D-    : 2.41e-4
+p-value of test                       :    0.31
+
+Anderson-Darling statistic = A2       :    2.69
+p-value of test                       :    0.04
+
+-----------------------------------------------
+CPU time used                    :  00:00:31.17
+
+Generator state:
+ 585832244960  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+svaria_SampleCorr test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   k = 1
+
+
+-----------------------------------------------
+Normal statistic                      :    0.61
+p-value of test                       :    0.27
+
+-----------------------------------------------
+CPU time used                    :  00:00:15.01
+
+Generator state:
+ 601832244960  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+svaria_AppearanceSpacings test:
+-----------------------------------------------
+   N =  1,   Q = 10000000,   K = 400000000,   r = 0,   s = 30,   L = 15
+
+   Sequences of n = (K + Q)L =   6150000000 bits
+   Q = 10000000 initialization blocks
+   K = 400000000 blocks for the test
+   the blocks have L = 15 bits
+
+
+
+-----------------------------------------------
+Normal statistic                      :   -0.62
+p-value of test                       :    0.73
+
+-----------------------------------------------
+CPU time used                    :  00:01:06.76
+
+Generator state:
+ 608392244960  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+svaria_AppearanceSpacings test:
+-----------------------------------------------
+   N =  1,   Q = 10000000,   K = 100000000,   r = 20,   s = 10,   L = 15
+
+   Sequences of n = (K + Q)L =   1650000000 bits
+   Q = 10000000 initialization blocks
+   K = 100000000 blocks for the test
+   the blocks have L = 15 bits
+
+
+
+-----------------------------------------------
+Normal statistic                      :   -0.92
+p-value of test                       :    0.82
+
+-----------------------------------------------
+CPU time used                    :  00:00:17.94
+
+Generator state:
+ 615432244960  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 2000000,  r =  0,  k = 256,  Alpha =      0,  Beta =  0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   69.60
+p-value of test                       :    0.01
+
+-----------------------------------------------
+CPU time used                    :  00:00:13.55
+
+Generator state:
+ 631816244960  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 2000000,  r =  8,  k = 256,  Alpha =      0,  Beta =  0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   30.62
+p-value of test                       :    0.96
+
+-----------------------------------------------
+CPU time used                    :  00:00:15.73
+
+Generator state:
+ 648200244960  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 2000000,  r = 16,  k = 256,  Alpha =      0,  Beta =  0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   62.41
+p-value of test                       :    0.05
+
+-----------------------------------------------
+CPU time used                    :  00:00:15.78
+
+Generator state:
+ 664584244960  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 2000000,  r = 24,  k = 256,  Alpha =      0,  Beta =  0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   39.46
+p-value of test                       :    0.74
+
+-----------------------------------------------
+CPU time used                    :  00:00:15.34
+
+Generator state:
+ 680968244960  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+svaria_SumCollector test:
+-----------------------------------------------
+   N =  1,  n = 20000000,  r =  0,   g = 10
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   25
+Chi-square statistic                  :   22.47
+p-value of test                       :    0.61
+
+-----------------------------------------------
+CPU time used                    :  00:00:12.03
+
+Generator state:
+ 694194672000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r =  0,    s = 30,    L = 60,    k = 60
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    4
+Chi-square statistic                  :    2.80
+p-value of test                       :    0.59
+
+-----------------------------------------------
+CPU time used                    :  00:01:03.61
+
+Generator state:
+ 698034672000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r = 20,    s = 10,    L = 60,    k = 60
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    4
+Chi-square statistic                  :    0.92
+p-value of test                       :    0.92
+
+-----------------------------------------------
+CPU time used                    :  00:01:08.32
+
+Generator state:
+ 709554672000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 50000,  r =  0,    s = 30,    L = 300,    k = 300
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    0.63
+p-value of test                       :    0.89
+
+-----------------------------------------------
+CPU time used                    :  00:01:46.59
+
+Generator state:
+ 714354672000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 50000,  r = 20,    s = 10,    L = 300,    k = 300
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    2.11
+p-value of test                       :    0.55
+
+-----------------------------------------------
+CPU time used                    :  00:02:04.88
+
+Generator state:
+ 728754672000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 2000,  r =  0,    s = 30,    L = 1200,    k = 1200
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    6.35
+p-value of test                       :    0.10
+
+-----------------------------------------------
+CPU time used                    :  00:02:22.80
+
+Generator state:
+ 731826672000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 2000,  r = 20,    s = 10,    L = 1200,    k = 1200
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    3.36
+p-value of test                       :    0.34
+
+-----------------------------------------------
+CPU time used                    :  00:02:53.32
+
+Generator state:
+ 741042672000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smarsa_Savir2 test:
+-----------------------------------------------
+   N =  1,  n = 20000000,  r =  0,    m = 1048576,    t = 30
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   17
+Chi-square statistic                  :   19.25
+p-value of test                       :    0.31
+
+-----------------------------------------------
+CPU time used                    :  00:00:16.50
+
+Generator state:
+ 760242672000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smarsa_GCD test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r =  0,   s = 30
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 2465
+Chi2 statistic for GCD values         : 2437.50
+p-value of test                       :    0.65
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:56.42
+
+Generator state:
+ 766642672000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+smarsa_GCD test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r = 10,   s = 20
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 1559
+Chi2 statistic for GCD values         : 1619.78
+p-value of test                       :    0.14
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:16.15
+
+Generator state:
+ 769202676736  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 50000000,  r =  0,   s = 30,   L0 =   90,   L1 =   90
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :   46
+ChiSquare statistic                   :   40.10
+p-value of test                       :    0.72
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :   47
+ChiSquare statistic                   :   37.14
+p-value of test                       :    0.85
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :   45
+ChiSquare statistic                   :   53.66
+p-value of test                       :    0.18
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :   36
+ChiSquare statistic                   :   29.20
+p-value of test                       :    0.78
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   23
+ChiSquare statistic                   :   22.33
+p-value of test                       :    0.50
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:56.63
+
+Generator state:
+ 774002676736  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 20,   s = 10,   L0 =   90,   L1 =   90
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :   44
+ChiSquare statistic                   :   41.24
+p-value of test                       :    0.59
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :   45
+ChiSquare statistic                   :   51.98
+p-value of test                       :    0.22
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :   45
+ChiSquare statistic                   :   52.87
+p-value of test                       :    0.20
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :   35
+ChiSquare statistic                   :   33.56
+p-value of test                       :    0.54
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   22
+ChiSquare statistic                   :   16.53
+p-value of test                       :    0.79
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:26.26
+
+Generator state:
+ 776882676736  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 5000000,  r =  0,   s = 30,   L0 = 1000,   L1 = 1000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  140
+ChiSquare statistic                   :  136.55
+p-value of test                       :    0.57
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  141
+ChiSquare statistic                   :  154.71
+p-value of test                       :    0.20
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :  500
+ChiSquare statistic                   :  526.64
+p-value of test                       :    0.20
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  132
+ChiSquare statistic                   :  154.87
+p-value of test                       :    0.08
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   72
+ChiSquare statistic                   :   67.01
+p-value of test                       :    0.64
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:58.40
+
+Generator state:
+ 782322676736  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r = 20,   s = 10,   L0 = 1000,   L1 = 1000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  128
+ChiSquare statistic                   :  124.59
+p-value of test                       :    0.57
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  130
+ChiSquare statistic                   :  110.77
+p-value of test                       :    0.89
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :  500
+ChiSquare statistic                   :  476.07
+p-value of test                       :    0.77
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  122
+ChiSquare statistic                   :  123.74
+p-value of test                       :    0.44
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   66
+ChiSquare statistic                   :   69.38
+p-value of test                       :    0.36
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:26.40
+
+Generator state:
+ 785522676736  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 500000,  r =  0,   s = 30,   L0 = 10000,   L1 = 10000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  366
+ChiSquare statistic                   :  421.76
+p-value of test                       :    0.02
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  366
+ChiSquare statistic                   :  391.99
+p-value of test                       :    0.17
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          : 5000
+ChiSquare statistic                   : 4989.86
+p-value of test                       :    0.54
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  360
+ChiSquare statistic                   :  369.56
+p-value of test                       :    0.35
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :  192
+ChiSquare statistic                   :  189.35
+p-value of test                       :    0.54
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:54.03
+
+Generator state:
+ 790866676736  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 100000,  r = 20,   s = 10,   L0 = 10000,   L1 = 10000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  318
+ChiSquare statistic                   :  332.27
+p-value of test                       :    0.28
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  318
+ChiSquare statistic                   :  304.47
+p-value of test                       :    0.70
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          : 5000
+ChiSquare statistic                   : 4912.69
+p-value of test                       :    0.81
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  315
+ChiSquare statistic                   :  293.32
+p-value of test                       :    0.80
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :  169
+ChiSquare statistic                   :  160.67
+p-value of test                       :    0.66
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:25.69
+
+Generator state:
+ 794066676736  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+scomp_LinearComp test:
+-----------------------------------------------
+   N =  1,  n = 120000,  r =  0,    s = 1
+
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   10
+Chi2 statistic for size of jumps      :   10.01
+p-value of test                       :    0.44
+
+
+-----------------------------------------------
+Normal statistic for number of jumps  :   -0.12
+p-value of test                       :    0.55
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:37.46
+
+Generator state:
+ 794070516736  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+scomp_LinearComp test:
+-----------------------------------------------
+   N =  1,  n = 120000,  r = 29,    s = 1
+
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   10
+Chi2 statistic for size of jumps      :    7.56
+p-value of test                       :    0.67
+
+
+-----------------------------------------------
+Normal statistic for number of jumps  :    1.17
+p-value of test                       :    0.12
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:36.82
+
+Generator state:
+ 794074356736  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+scomp_LempelZiv test:
+-----------------------------------------------
+   N = 10,  n = 33554432,  r =  0,   s =   30,   k =   25
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.071
+p-value of test                       :    0.87
+
+Kolmogorov-Smirnov- statistic = D-    :    0.30
+p-value of test                       :    0.14
+
+Anderson-Darling statistic = A2       :    1.09
+p-value of test                       :    0.31
+
+Tests on the sum of all N observations
+Standardized normal statistic         :    1.04
+p-value of test                       :    0.15
+
+Sample variance                       :    1.19
+p-value of test                       :    0.30
+
+-----------------------------------------------
+CPU time used                    :  00:00:32.03
+
+Generator state:
+ 794432270976  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sspectral_Fourier3 test:
+-----------------------------------------------
+   N = 50000,  n = 16384,  r =  0,   s =   30,   k =   14
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    : 4.18e-3
+p-value of test                       :    0.86
+
+Kolmogorov-Smirnov- statistic = D-    :   0.017
+p-value of test                       :    0.10
+
+Anderson-Darling statistic = A2       :    0.76
+p-value of test                       :    0.51
+
+-----------------------------------------------
+CPU time used                    :  00:00:54.64
+
+Generator state:
+ 795307470976  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sspectral_Fourier3 test:
+-----------------------------------------------
+   N = 50000,  n = 16384,  r = 20,   s =   10,   k =   14
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    : 8.09e-3
+p-value of test                       :    0.58
+
+Kolmogorov-Smirnov- statistic = D-    : 8.43e-3
+p-value of test                       :    0.56
+
+Anderson-Darling statistic = A2       :    0.43
+p-value of test                       :    0.81
+
+-----------------------------------------------
+CPU time used                    :  00:00:57.52
+
+Generator state:
+ 797929870976  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sstring_LongestHeadRun test:
+-----------------------------------------------
+   N =  1,  n = 1000,  r =  0,   s = 30,   L = 10000020
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    8
+Chi-square statistic                  :    6.98
+p-value of test                       :    0.54
+
+-----------------------------------------------
+Global longest run of 1               :   31.00
+p-value of test                       :    0.69
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:02:26.92
+
+Generator state:
+ 808596558976  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sstring_LongestHeadRun test:
+-----------------------------------------------
+   N =  1,  n = 300,  r = 20,   s = 10,   L = 10000020
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    7
+Chi-square statistic                  :    6.99
+p-value of test                       :    0.43
+
+-----------------------------------------------
+Global longest run of 1               :   29.00
+p-value of test                       :    0.75
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:55.65
+
+Generator state:
+ 818196578176  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sstring_PeriodsInStrings test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r =  0,   s =   30
+
+
+-----------------------------------------------
+Number of degrees of freedom          :  302
+Chi-square statistic                  :  298.20
+p-value of test                       :    0.55
+
+-----------------------------------------------
+CPU time used                    :  00:00:49.00
+
+Generator state:
+ 827796578176  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sstring_PeriodsInStrings test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r = 15,   s =   15
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   56
+Chi-square statistic                  :   51.99
+p-value of test                       :    0.63
+
+-----------------------------------------------
+CPU time used                    :  00:00:35.25
+
+Generator state:
+ 837396578176  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sstring_HammingWeight2 test:
+-----------------------------------------------
+   N = 100,  n = 100000000,  r =  0,   s = 30,   L = 1000000
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.036
+p-value of test                       :    0.75
+
+Kolmogorov-Smirnov- statistic = D-    :   0.048
+p-value of test                       :    0.61
+
+Anderson-Darling statistic = A2       :    0.31
+p-value of test                       :    0.93
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 10000
+Chi-square statistic                  :10069.58
+p-value of test                       :    0.31
+
+-----------------------------------------------
+CPU time used                    :  00:00:25.39
+
+Generator state:
+ 848063458176  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sstring_HammingWeight2 test:
+-----------------------------------------------
+   N = 30,  n = 100000000,  r = 20,   s = 10,   L = 1000000
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.070
+p-value of test                       :    0.71
+
+Kolmogorov-Smirnov- statistic = D-    :    0.19
+p-value of test                       :    0.10
+
+Anderson-Darling statistic = A2       :    1.14
+p-value of test                       :    0.29
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 3000
+Chi-square statistic                  : 3073.66
+p-value of test                       :    0.17
+
+-----------------------------------------------
+CPU time used                    :  00:00:16.61
+
+Generator state:
+ 857663458176  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   s = 30,   L = 30
+
+
+
+-----------------------------------------------
+Normal statistic                      :    0.10
+p-value of test                       :    0.46
+
+-----------------------------------------------
+CPU time used                    :  00:00:43.40
+
+Generator state:
+ 873663458176  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N =  1,  n = 50000000,  r =  0,   s = 30,   L = 300
+
+
+
+-----------------------------------------------
+Normal statistic                      :   -1.02
+p-value of test                       :    0.85
+
+-----------------------------------------------
+CPU time used                    :  00:00:39.75
+
+Generator state:
+ 889663458176  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   s = 30,   L = 1200
+
+
+
+-----------------------------------------------
+Normal statistic                      :    0.31
+p-value of test                       :    0.38
+
+-----------------------------------------------
+CPU time used                    :  00:00:31.17
+
+Generator state:
+ 902463458176  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r =  0,   s = 30,   L = 30,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          :  577
+Chi-square statistic                  :  595.01
+p-value of test                       :    0.29
+
+-----------------------------------------------
+CPU time used                    :  00:00:56.30
+
+Generator state:
+ 921663458176  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r = 20,   s = 10,   L = 30,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          :  533
+Chi-square statistic                  :  549.78
+p-value of test                       :    0.30
+
+-----------------------------------------------
+CPU time used                    :  00:00:42.34
+
+Generator state:
+ 940863458176  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 30000000,  r =  0,   s = 30,   L = 300,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 4117
+Chi-square statistic                  : 4163.64
+p-value of test                       :    0.30
+
+-----------------------------------------------
+CPU time used                    :  00:00:50.43
+
+Generator state:
+ 960063458176  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 20,   s = 10,   L = 300,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 3585
+Chi-square statistic                  : 3652.47
+p-value of test                       :    0.21
+
+-----------------------------------------------
+CPU time used                    :  00:00:35.32
+
+Generator state:
+ 979263458176  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   s = 30,   L = 1200,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 11825
+Chi-square statistic                  :11752.14
+p-value of test                       :    0.68
+
+-----------------------------------------------
+CPU time used                    :  00:01:03.02
+
+Generator state:
+ 1004863458176  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r = 20,   s = 10,   L = 1200,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 7473
+Chi-square statistic                  : 7652.02
+p-value of test                       :    0.07
+
+-----------------------------------------------
+CPU time used                    :  00:00:13.86
+
+Generator state:
+ 1012543458176  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sstring_Run test:
+-----------------------------------------------
+   N =  1,  n = 1000000000,  r =  0,   s =   30
+
+
+-----------------------------------------------
+Total number of 1 runs:  1000000000
+
+Number of degrees of freedom          :   52
+Chi2 statistic for number of runs     :   41.80
+p-value of test                       :    0.84
+
+
+-----------------------------------------------
+Total number of bits:  3999993000
+
+Normal statistic for number of bits   :  -0.078
+p-value of test                       :    0.53
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:58.81
+
+Generator state:
+ 1016810117376  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sstring_Run test:
+-----------------------------------------------
+   N =  1,  n = 1000000000,  r = 20,   s =   10
+
+
+-----------------------------------------------
+Total number of 1 runs:  1000000001
+
+Number of degrees of freedom          :   52
+Chi2 statistic for number of runs     :   42.34
+p-value of test                       :    0.83
+
+
+-----------------------------------------------
+Total number of bits:  3999960670
+
+Normal statistic for number of bits   :   -0.44
+p-value of test                       :    0.67
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:14.36
+
+Generator state:
+ 1029609991520  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000021,  r =  0,   s = 30,   d = 1
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.12
+p-value of test                       :    0.68
+
+Kolmogorov-Smirnov- statistic = D-    :    0.13
+p-value of test                       :    0.66
+
+Anderson-Darling statistic = A2       :    0.30
+p-value of test                       :    0.94
+
+Tests on the sum of all N observations
+Standardized normal statistic         :    0.12
+p-value of test                       :    0.45
+
+Sample variance                       :    1.01
+p-value of test                       :    0.43
+
+-----------------------------------------------
+CPU time used                    :  00:00:58.86
+
+Generator state:
+ 1040276658720  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N =  5,  n = 1000000001,  r = 20,   s = 10,   d = 1
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.16
+p-value of test                       :    0.72
+
+Kolmogorov-Smirnov- statistic = D-    :    0.33
+p-value of test                       :    0.27
+
+Anderson-Darling statistic = A2       :    0.94
+p-value of test                       :    0.39
+
+Tests on the sum of all N observations
+Standardized normal statistic         :    0.75
+p-value of test                       :    0.23
+
+Sample variance                       :    2.00
+p-value of test                       :    0.09
+
+-----------------------------------------------
+CPU time used                    :  00:01:15.27
+
+Generator state:
+ 1056276658880  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000020,  r =  0,   s = 30,   d = 30
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.30
+p-value of test                       :    0.14
+
+Kolmogorov-Smirnov- statistic = D-    :   0.056
+p-value of test                       :    0.91
+
+Anderson-Darling statistic = A2       :    0.99
+p-value of test                       :    0.36
+
+Tests on the sum of all N observations
+Standardized normal statistic         :   -1.12
+p-value of test                       :    0.87
+
+Sample variance                       :    0.82
+p-value of test                       :    0.60
+
+-----------------------------------------------
+CPU time used                    :  00:00:53.02
+
+Generator state:
+ 1066943326080  bits have been read.
+
+
+
+
+***********************************************************
+HOST = MasterMind, Linux
+
+ufile_CreateReadBin:   /mnt/m/random.256G.bin
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N =  5,  n = 1000000010,  r = 20,   s = 10,   d = 10
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.22
+p-value of test                       :    0.55
+
+Kolmogorov-Smirnov- statistic = D-    :    0.35
+p-value of test                       :    0.24
+
+Anderson-Darling statistic = A2       :    0.77
+p-value of test                       :    0.50
+
+Tests on the sum of all N observations
+Standardized normal statistic         :    0.47
+p-value of test                       :    0.32
+
+Sample variance                       :    0.20
+p-value of test                       :    0.94
+
+-----------------------------------------------
+CPU time used                    :  00:01:04.14
+
+Generator state:
+ 1082943326400  bits have been read.
+
+
+
+
+
+========= Summary results of Crush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        ufile_CreateReadBin
+ Number of statistics:  144
+ Total CPU time:   01:27:27.31
+
+ All tests were passed
+
+
+

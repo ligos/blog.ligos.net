@@ -1,0 +1,723 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 Starting BigCrush
+                 Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+sknuth_Run test:
+-----------------------------------------------
+   N =  5,  n = 1000000000,  r =  0,   Up = FALSE
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.48
+p-value of test                       :    0.07
+
+Kolmogorov-Smirnov- statistic = D-    :    0.28
+p-value of test                       :    0.38
+
+Anderson-Darling statistic = A2       :    1.67
+p-value of test                       :    0.14
+
+Test on the sum of all N observations
+Number of degrees of freedom          :   30
+Chi-square statistic                  :   21.23
+p-value of test                       :    0.88
+
+-----------------------------------------------
+CPU time used                    :  00:01:39.89
+
+Generator state:
+ 160000000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+sknuth_Run test:
+-----------------------------------------------
+   N = 10,  n = 1000000000,  r = 15,   Up =  TRUE
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.16
+p-value of test                       :    0.55
+
+Kolmogorov-Smirnov- statistic = D-    :    0.20
+p-value of test                       :    0.38
+
+Anderson-Darling statistic = A2       :    0.87
+p-value of test                       :    0.43
+
+Test on the sum of all N observations
+Number of degrees of freedom          :   60
+Chi-square statistic                  :   70.93
+p-value of test                       :    0.16
+
+-----------------------------------------------
+CPU time used                    :  00:04:33.10
+
+Generator state:
+ 480000000000  bits have been read.
+
+
+
+
+***********************************************************
+Test sknuth_Permutation calling smultin_Multinomial
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 1000000000,  r =  5,   t =  3,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =                  6
+       Expected number per cell =  1.6666667e+08
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =  2.5000002e-09,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          :    5
+Value of the statistic                :    6.21
+p-value of test                       :    0.29
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:42.75
+
+Generator state:
+ 576000000000  bits have been read.
+
+
+
+
+***********************************************************
+Test sknuth_Permutation calling smultin_Multinomial
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 1000000000,  r =  5,   t =  5,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =                120
+       Expected number per cell =   8333333.3
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =  5.9500005e-08,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          :  119
+Value of the statistic                :  124.22
+p-value of test                       :    0.35
+
+
+-----------------------------------------------
+CPU time used                    :  00:02:39.17
+
+Generator state:
+ 736000000000  bits have been read.
+
+
+
+
+***********************************************************
+Test sknuth_Permutation calling smultin_Multinomial
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  5,   t =  7,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =               5040
+       Expected number per cell =   99206.349
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =  5.0390004e-06,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 5039
+Value of the statistic                : 5039.35
+p-value of test                       :    0.50
+
+
+-----------------------------------------------
+CPU time used                    :  00:02:08.04
+
+Generator state:
+ 848000000000  bits have been read.
+
+
+
+
+***********************************************************
+Test sknuth_Permutation calling smultin_Multinomial
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r = 10,   t = 10,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =            3628800
+       Expected number per cell =    137.7866
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =   0.0036287993,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 3628799
+Value of the statistic                : 3.63e+6
+p-value of test                       :    0.78
+
+
+-----------------------------------------------
+CPU time used                    :  00:04:38.14
+
+Generator state:
+ 1008000000000  bits have been read.
+
+
+
+
+***********************************************************
+Test sknuth_CollisionPermut calling smultin_Multinomial
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N = 20,  n = 20000000,  r =  0,   t = 14,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =        87178291200
+       Expected number per cell =  1 /  4358.9146
+       EColl = n^2 / (2k) =   2294.14912
+       Hashing =   TRUE
+
+       Collision test,    Mu =      2293.9736,    Sigma =    47.8841
+
+-----------------------------------------------
+Test Results for Collisions
+
+For the total number of collisions, we use
+      the Poisson approximation:
+Expected number of collisions = N*Mu  :    45879.47
+Observed number of collisions         :    45369
+p-value of test                       :    0.9914
+
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :    1743165869369
+  j =  1                              :        399909265
+  j =  2                              :            45363
+  j =  3                              :                3
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:07:05.52
+
+Generator state:
+ 1187200000000  bits have been read.
+
+
+
+
+***********************************************************
+Test sknuth_CollisionPermut calling smultin_Multinomial
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N = 20,  n = 20000000,  r = 10,   t = 14,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =        87178291200
+       Expected number per cell =  1 /  4358.9146
+       EColl = n^2 / (2k) =   2294.14912
+       Hashing =   TRUE
+
+       Collision test,    Mu =      2293.9736,    Sigma =    47.8841
+
+-----------------------------------------------
+Test Results for Collisions
+
+For the total number of collisions, we use
+      the Poisson approximation:
+Expected number of collisions = N*Mu  :    45879.47
+Observed number of collisions         :    45785
+p-value of test                       :    0.67
+
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :    1743165869785
+  j =  1                              :        399908431
+  j =  2                              :            45783
+  j =  3                              :                1
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:07:35.20
+
+Generator state:
+ 1366400000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N = 40,  n = 10000000,  r =  0,   d = 100000,   t =  8
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Test results for chi2 with 99999 degrees of freedom:
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.032
+p-value of test                       :    0.90
+
+Kolmogorov-Smirnov- statistic = D-    :    0.17
+p-value of test                       :    0.09
+
+Anderson-Darling statistic = A2       :    2.06
+p-value of test                       :    0.08
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 3999960
+Chi-square statistic                  : 4.01e+6
+p-value of test                       :    0.03
+
+
+-----------------------------------------------
+Test results for Anderson-Darling:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.14
+p-value of test                       :    0.18
+
+Kolmogorov-Smirnov- statistic = D-    :    0.12
+p-value of test                       :    0.28
+
+Anderson-Darling statistic = A2       :    1.69
+p-value of test                       :    0.14
+
+
+-----------------------------------------------
+CPU time used                    :  00:03:54.53
+
+Generator state:
+ 1468800000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N = 30,  n = 10000000,  r =  0,   d = 100000,   t = 16
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Test results for chi2 with 99999 degrees of freedom:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.17
+p-value of test                       :    0.17
+
+Kolmogorov-Smirnov- statistic = D-    :   0.076
+p-value of test                       :    0.67
+
+Anderson-Darling statistic = A2       :    0.64
+p-value of test                       :    0.61
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 2999970
+Chi-square statistic                  : 3.00e+6
+p-value of test                       :    0.57
+
+
+-----------------------------------------------
+Test results for Anderson-Darling:
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.087
+p-value of test                       :    0.60
+
+Kolmogorov-Smirnov- statistic = D-    :    0.11
+p-value of test                       :    0.46
+
+Anderson-Darling statistic = A2       :    0.44
+p-value of test                       :    0.81
+
+
+-----------------------------------------------
+CPU time used                    :  00:03:29.90
+
+Generator state:
+ 1622400000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N = 20,  n = 10000000,  r =  0,   d = 100000,   t = 24
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Test results for chi2 with 99999 degrees of freedom:
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.062
+p-value of test                       :    0.82
+
+Kolmogorov-Smirnov- statistic = D-    :   0.095
+p-value of test                       :    0.66
+
+Anderson-Darling statistic = A2       :    0.22
+p-value of test                       :    0.99
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 1999980
+Chi-square statistic                  : 2.00e+6
+p-value of test                       :    0.44
+
+
+-----------------------------------------------
+Test results for Anderson-Darling:
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.092
+p-value of test                       :    0.67
+
+Kolmogorov-Smirnov- statistic = D-    :    0.15
+p-value of test                       :    0.36
+
+Anderson-Darling statistic = A2       :    0.30
+p-value of test                       :    0.94
+
+
+-----------------------------------------------
+CPU time used                    :  00:02:40.80
+
+Generator state:
+ 1776000000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N = 20,  n = 10000000,  r =  0,   d = 100000,   t = 32
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Test results for chi2 with 99999 degrees of freedom:
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.034
+p-value of test                       :    0.93
+
+Kolmogorov-Smirnov- statistic = D-    :    0.17
+p-value of test                       :    0.30
+
+Anderson-Darling statistic = A2       :    0.69
+p-value of test                       :    0.56
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 1999980
+Chi-square statistic                  : 2.00e+6
+p-value of test                       :    0.17
+
+
+-----------------------------------------------
+Test results for Anderson-Darling:
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.032
+p-value of test                       :    0.94
+
+Kolmogorov-Smirnov- statistic = D-    :    0.28
+p-value of test                       :    0.04
+
+Anderson-Darling statistic = A2       :    2.34
+p-value of test                       :    0.06
+
+
+-----------------------------------------------
+CPU time used                    :  00:03:07.34
+
+Generator state:
+ 1980800000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+svaria_SampleProd test:
+-----------------------------------------------
+   N = 40,  n = 10000000,  r =  0,   t = 8
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.078
+p-value of test                       :    0.58
+
+Kolmogorov-Smirnov- statistic = D-    :    0.15
+p-value of test                       :    0.14
+
+Anderson-Darling statistic = A2       :    0.71
+p-value of test                       :    0.55
+
+-----------------------------------------------
+CPU time used                    :  00:03:02.67
+
+Generator state:
+ 2083200000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+svaria_SampleProd test:
+-----------------------------------------------
+   N = 20,  n = 10000000,  r =  0,   t = 16
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.15
+p-value of test                       :    0.39
+
+Kolmogorov-Smirnov- statistic = D-    :   0.093
+p-value of test                       :    0.66
+
+Anderson-Darling statistic = A2       :    0.48
+p-value of test                       :    0.76
+
+-----------------------------------------------
+CPU time used                    :  00:02:04.78
+
+Generator state:
+ 2185600000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+svaria_SampleProd test:
+-----------------------------------------------
+   N = 20,  n = 10000000,  r =  0,   t = 24
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.21
+p-value of test                       :    0.14
+
+Kolmogorov-Smirnov- statistic = D-    :    0.12
+p-value of test                       :    0.54
+
+Anderson-Darling statistic = A2       :    1.28
+p-value of test                       :    0.24
+
+-----------------------------------------------
+CPU time used                    :  00:02:36.26
+
+Generator state:
+ 2339200000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+svaria_SampleMean test:
+-----------------------------------------------
+   N = 20000000,  n = 30,  r =  0
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    : 9.84e-5
+p-value of test                       :    0.68
+
+Kolmogorov-Smirnov- statistic = D-    : 8.66e-5
+p-value of test                       :    0.74
+
+Anderson-Darling statistic = A2       :    0.30
+p-value of test                       :    0.94
+
+-----------------------------------------------
+CPU time used                    :  00:00:41.94
+
+Generator state:
+ 2358400000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+svaria_SampleMean test:
+-----------------------------------------------
+   N = 20000000,  n = 30,  r = 10
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    : 1.16e-4
+p-value of test                       :    0.58
+
+Kolmogorov-Smirnov- statistic = D-    : 2.05e-4
+p-value of test                       :    0.19
+
+Anderson-Darling statistic = A2       :    0.81
+p-value of test                       :    0.47
+
+-----------------------------------------------
+CPU time used                    :  00:00:45.76
+
+Generator state:
+ 2377600000000  bits have been read.
+
+
+
+
+
+========= Summary results of BigCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        ufile_CreateReadBin
+ Number of statistics:  21
+ Total CPU time:   00:54:26.03
+
+ All tests were passed
+
+
+

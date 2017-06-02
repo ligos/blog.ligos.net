@@ -1,0 +1,426 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 Starting BigCrush
+                 Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N = 10,  n = 30000000,  r =  0,   s = 3,   L = 30,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.27
+p-value of test                       :    0.18
+
+Kolmogorov-Smirnov- statistic = D-    :   0.099
+p-value of test                       :    0.77
+
+Anderson-Darling statistic = A2       :    0.70
+p-value of test                       :    0.55
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 4890
+Chi-square statistic                  : 4815.34
+p-value of test                       :    0.77
+
+-----------------------------------------------
+CPU time used                    :  00:02:18.36
+
+Generator state:
+ 192000000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N = 10,  n = 30000000,  r = 27,   s = 3,   L = 30,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.11
+p-value of test                       :    0.75
+
+Kolmogorov-Smirnov- statistic = D-    :    0.11
+p-value of test                       :    0.73
+
+Anderson-Darling statistic = A2       :    0.17
+p-value of test                       :    0.9967
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 4890
+Chi-square statistic                  : 4892.65
+p-value of test                       :    0.49
+
+-----------------------------------------------
+CPU time used                    :  00:01:45.34
+
+Generator state:
+ 384000000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 30000000,  r =  0,   s = 4,   L = 300,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 4117
+Chi-square statistic                  : 4066.01
+p-value of test                       :    0.71
+
+-----------------------------------------------
+CPU time used                    :  00:01:19.06
+
+Generator state:
+ 528000000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 30000000,  r = 26,   s = 4,   L = 300,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 4117
+Chi-square statistic                  : 4123.93
+p-value of test                       :    0.47
+
+-----------------------------------------------
+CPU time used                    :  00:01:25.25
+
+Generator state:
+ 672000000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   s = 5,   L = 1200,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 11825
+Chi-square statistic                  :12038.99
+p-value of test                       :    0.08
+
+-----------------------------------------------
+CPU time used                    :  00:01:35.14
+
+Generator state:
+ 825600000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 25,   s = 5,   L = 1200,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 11825
+Chi-square statistic                  :11970.99
+p-value of test                       :    0.17
+
+-----------------------------------------------
+CPU time used                    :  00:01:31.20
+
+Generator state:
+ 979200000000  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+sstring_Run test:
+-----------------------------------------------
+   N =  1,  n = 2000000000,  r =  0,   s =    3
+
+
+-----------------------------------------------
+Total number of 1 runs:  2000000000
+
+Number of degrees of freedom          :   54
+Chi2 statistic for number of runs     :   54.70
+p-value of test                       :    0.45
+
+
+-----------------------------------------------
+Total number of bits:  8000027709
+
+Normal statistic for number of bits   :    0.22
+p-value of test                       :    0.41
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:14.12
+
+Generator state:
+ 1064533628896  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+sstring_Run test:
+-----------------------------------------------
+   N =  1,  n = 2000000000,  r = 27,   s =    3
+
+
+-----------------------------------------------
+Total number of 1 runs:  2000000000
+
+Number of degrees of freedom          :   54
+Chi2 statistic for number of runs     :   60.24
+p-value of test                       :    0.26
+
+
+-----------------------------------------------
+Total number of bits:  8000150457
+
+Normal statistic for number of bits   :    1.19
+p-value of test                       :    0.12
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:13.62
+
+Generator state:
+ 1149868567104  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000030,  r =  0,   s = 3,   d = 1
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.21
+p-value of test                       :    0.37
+
+Kolmogorov-Smirnov- statistic = D-    :    0.29
+p-value of test                       :    0.16
+
+Anderson-Darling statistic = A2       :    0.84
+p-value of test                       :    0.45
+
+Tests on the sum of all N observations
+Standardized normal statistic         :    0.53
+p-value of test                       :    0.30
+
+Sample variance                       :    0.62
+p-value of test                       :    0.78
+
+-----------------------------------------------
+CPU time used                    :  00:02:14.58
+
+Generator state:
+ 1256535237184  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000029,  r =  0,   s = 3,   d = 3
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.17
+p-value of test                       :    0.52
+
+Kolmogorov-Smirnov- statistic = D-    :    0.16
+p-value of test                       :    0.55
+
+Anderson-Darling statistic = A2       :    0.44
+p-value of test                       :    0.80
+
+Tests on the sum of all N observations
+Standardized normal statistic         :   0.076
+p-value of test                       :    0.47
+
+Sample variance                       :    0.73
+p-value of test                       :    0.68
+
+-----------------------------------------------
+CPU time used                    :  00:02:03.37
+
+Generator state:
+ 1363201907264  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000030,  r = 27,   s = 3,   d = 1
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.45
+p-value of test                       :    0.01
+
+Kolmogorov-Smirnov- statistic = D-    :    0.19
+p-value of test                       :    0.43
+
+Anderson-Darling statistic = A2       :    2.18
+p-value of test                       :    0.07
+
+Tests on the sum of all N observations
+Standardized normal statistic         :   -1.10
+p-value of test                       :    0.86
+
+Sample variance                       :    0.13
+p-value of test                       :    0.9988
+
+-----------------------------------------------
+CPU time used                    :  00:02:16.34
+
+Generator state:
+ 1469868577344  bits have been read.
+
+
+
+
+***********************************************************
+HOST = LOKI, Linux
+
+ufile_CreateReadBin:   /mnt/x/Incoming/Turninger/random.384GB.bin
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000029,  r = 27,   s = 3,   d = 3
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.21
+p-value of test                       :    0.37
+
+Kolmogorov-Smirnov- statistic = D-    :    0.17
+p-value of test                       :    0.52
+
+Anderson-Darling statistic = A2       :    0.58
+p-value of test                       :    0.66
+
+Tests on the sum of all N observations
+Standardized normal statistic         :  -0.055
+p-value of test                       :    0.52
+
+Sample variance                       :    1.57
+p-value of test                       :    0.12
+
+-----------------------------------------------
+CPU time used                    :  00:02:07.98
+
+Generator state:
+ 1576535247424  bits have been read.
+
+
+
+
+
+========= Summary results of BigCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        ufile_CreateReadBin
+ Number of statistics:  14
+ Total CPU time:   00:21:04.42
+
+ All tests were passed
+
+
+
