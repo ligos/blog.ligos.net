@@ -1,6 +1,7 @@
 ---
 title: Who or What is Using my Bandwidth
 date: 2016-04-24 17:30:00
+updated: 2017-08-13
 tags:
 - Internet
 - Bandwidth
@@ -29,6 +30,17 @@ So, I need to track down what is using my bandwidth and disable / pause it.
 We'll use two features to track down where my bandwidth is being used: *[interfaces](http://wiki.mikrotik.com/wiki/Manual:Interface)* and *[torch](http://wiki.mikrotik.com/wiki/Manual:Troubleshooting_tools#Torch_.28.2Ftool_torch.29)*.
 
 These steps assume you're using [WinBox](http://wiki.mikrotik.com/wiki/Manual:Winbox), and have already logged in to your Mikrotik based gateway.
+
+
+*UPDATE 2017-08-13*
+
+**IMPORTANT:** Please make sure you use **WinBox** and not the "webfig" web interface via a browser.
+As of v6.40.1 (and probably several versions prior), *torch* doesn't work in "webfig".
+The main symptom is seeing all IP addresses as `0.0.0.0`.
+Please use **WinBox** when using *torch*.
+
+*END UPDATE*
+
 
 ### Interfaces
 
