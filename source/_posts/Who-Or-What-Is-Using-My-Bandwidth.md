@@ -32,16 +32,6 @@ We'll use two features to track down where my bandwidth is being used: *[interfa
 These steps assume you're using [WinBox](http://wiki.mikrotik.com/wiki/Manual:Winbox), and have already logged in to your Mikrotik based gateway.
 
 
-*UPDATE 2017-08-13*
-
-**IMPORTANT:** Please make sure you use **WinBox** and not the "webfig" web interface via a browser.
-As of v6.40.1 (and probably several versions prior), *torch* doesn't work in "webfig".
-The main symptom is seeing all IP addresses as `0.0.0.0`.
-Please use **WinBox** when using *torch*.
-
-*END UPDATE*
-
-
 ### Interfaces
 
 First up is to identify bandwidth usage at a high level.
@@ -74,6 +64,18 @@ You should see a list of real-time traffic appear.
 Sort by *Rx Rate* or *Tx Rate* so the offending IP addresses are listed at the top. 
 
 <img src="/images/Who-Or-What-Is-Using-My-Bandwidth/torch-internet.png" class="" width=300 height=300 alt="What Is My Internet Doing Right Now" />
+
+
+*UPDATE 2017-08-13*
+
+**IMPORTANT:** If you are using the "webfig" web interface via a browser, you must tick the boxes to collect information about *protocol* and *port*.
+If you don't do this, you'll see all IP addresses as `0.0.0.0`.
+If you still find trouble getting torch working in *webfig*, please use *WinBox* instead.
+
+<img src="/images/Who-Or-What-Is-Using-My-Bandwidth/webfig-torch.png" class="" width=300 height=300 alt="Torch in Webfig needs extra boxes ticked" />
+
+*END UPDATE*
+
 
 I have two IP addresses to look into: `150.101.98.69` and `23.7.19.36`.
 Between them, they are using almost all my 4Mbps.
