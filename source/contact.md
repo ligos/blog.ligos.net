@@ -8,6 +8,6 @@ The best way to contact Murray is via **email** [blog@ligos.net](mailto:blog@lig
 
 The **comments** section below each post is perfect for, well, comments about a post.
 
-Facebook, Google Plus and Twitter are also available. And highly unlikely to get my attention. 
+Facebook, Google Plus, Twitter and [Keybase](https://keybase.io/ligos) are also available. And highly unlikely to get my attention. 
 
 I cannot promise to respond to every question or comment, but I do read everything.
