@@ -84,7 +84,7 @@ theme: hueman
 menu:
   Home: /
   Contact: /contact.html
-#  Categories:
+  Donate: /donate.html
   About: /about.html
 
 # Logo url and optional width, height. Remove to use default.

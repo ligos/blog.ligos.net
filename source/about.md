@@ -22,7 +22,12 @@ I maintain a small, if unusually robust, home network.
 Which hosts this blog and [MakeMeAPassword.org](https://makemeapassword.org).
 
 
+## Financial Support
+
+If you'd like to financially support this blog, please see the [donate](/donate.html) page for more details.
+
 ## Copyright
+
 This site is copyright © Murray Grant 2016. 
 Content by the author is licensed under a Creative Commons License [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/deed.en_GB). 
 Other content is copyright their respective owners.
@@ -38,6 +43,7 @@ It does not represent the views, policies, opinions or works of any company I ha
 This includes (and is not limited to) [Wise Owl Legal](http://www.wiseowllegal.com.au/), [Far Edge Technology](http://faredge.com.au/) and [Innovent Software](http://www.innoventsoftware.com.au/).
 
 ## Terms Of Use
+
 This site is available for public consumption under the assumption that it provides useful information (yes, this is a big assumption!).
 If you find the site is not useful, you are advised to stop using it.
 
