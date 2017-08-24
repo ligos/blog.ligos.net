@@ -743,7 +743,7 @@ Next steps are:
 4. Create and configure a new DCHP scope for the new subnet.
 
 
-Or for more [serious isolation, see my previous post](http://localhost:4000/2016-07-28/How-To-Make-An-Isolated-Network.html).
+Or for more [serious isolation, see my previous post](/2016-07-28/How-To-Make-An-Isolated-Network.html).
 
 
 ### IPSec VPN access
