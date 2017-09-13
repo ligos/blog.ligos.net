@@ -415,7 +415,7 @@ I also used the console app and [practrand](http://pracrand.sourceforge.net/) to
 
 ### Future Work
 
-The generator can create around 60MB of random bytes per second (on a current gen i3 - TODO get exact spec), however this assumes it is creating relatively large chunks of randomness at a time (32kB chunks).
+The generator can create around 60MB of random bytes per second (on an i3-7100), however this assumes it is creating relatively large chunks of randomness at a time (32kB chunks).
 
 Most random generators are asked for individual `Int32` or `Double` values.
 And the generator in its current state is highly inefficient at this (although I haven't tried benchmarking it yet).
