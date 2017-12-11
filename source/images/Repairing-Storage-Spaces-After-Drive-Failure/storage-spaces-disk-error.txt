@@ -1,0 +1,23 @@
+Physical disk {8acb91cd-c919-116d-a061-e3c01b0798e7} failed an IO operation. Return Code: The request failed due to a fatal device hardware error.. Additional related events may be found in the System event log for Disk 3.                  
+                  
+This disk may need to be replaced. To view its reliability counters, run this command in PowerShell:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match "{8acb91cd-c919-116d-a061-e3c01b0798e7}" } | Get-StorageReliabilityCounter                  
+                  
+This disk may be located using the following information:                  
+                  
+Drive Manufacturer: NULL                  
+Drive Model Number: ST31000524NS                  
+Drive Serial Number: 9WK1D3JK                  
+                  
+More information can be obtained using this PowerShell command:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match "{8acb91cd-c919-116d-a061-e3c01b0798e7}" }                  
+                  
+If this disk is in an enclosure, it may be located using the following information:                  
+                  
+Enclosure Manufacturer: NULL                  
+Enclosure Model Number: NULL                  
+Enclosure Serial Number: NULL                  
+Enclosure Slot: -1                  
+                  
+It may also be located by running this command in PowerShell:                  
+Get-PhysicalDisk | ?{ $_.ObjectId -Match "{8acb91cd-c919-116d-a061-e3c01b0798e7}" } | Enable-PhysicalDiskIndication

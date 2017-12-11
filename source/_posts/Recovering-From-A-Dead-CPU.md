@@ -89,7 +89,7 @@ The second was my data disks.
 They are in a [Storage Spaces](https://support.microsoft.com/en-us/help/12438/windows-10-storage-spaces) array to provide mirroring between 4 disks.
 But it seems one of SATA cables wasn't quite plugged in right.
 Windows detected IO errors, disabled the disk and Storage Spaces got all grumpy.
-I'll post more information about this in a future blog, but I eventually got it sorted.
+[More information about repairing Storage Spaces](/2017-12-11/Repairing-Storage-Spaces-After-Drive-Failure.html), but I eventually got it sorted.
 
 
 ### 3. Re-Activate Windows
