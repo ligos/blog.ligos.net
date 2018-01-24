@@ -1,6 +1,7 @@
 ---
 title: Reverse Proxy With IIS and Lets Encrypt
 date: 2016-11-14
+updated: 2018-01-02
 tags:
 - IIS
 - Reverse Proxy
@@ -65,6 +66,16 @@ The following are a pretty minimal set which will allow you to reverse proxy, pl
 <img src="/images/Reverse-Proxy-With-IIS-And-Lets-Encrypt/install-iis.png" class="" width=300 height=300 alt="You have to turn IIS on before you can use it" />
 
 Installing *Application Request Routing* is easiest via the [Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx). 
+
+**Updated 2018-01-02**
+
+You also need to enable the *Application Request Routing* proxy to actually do the reverse proxy.
+If this isn't enabled, you'll end up getting 404 errors with no obvious reason why.
+
+Open *Application Request Routing* on your root web server -> *Proxy Server Settings* -> tick *Enable Proxy*.
+
+<img src="/images/Reverse-Proxy-With-IIS-And-Lets-Encrypt/arr-proxy-enabled.png" class="" width=300 height=300 alt="This needs to be ticked before things work" />
+
 
 ### Step 1 - Create a folder for the site
 
