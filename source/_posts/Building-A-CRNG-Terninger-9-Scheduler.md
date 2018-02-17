@@ -15,7 +15,7 @@ tags:
 categories: Coding
 ---
 
-The scheduler which ties all the party together.
+The scheduler which ties all the parts together.
 
 <!-- more --> 
 
