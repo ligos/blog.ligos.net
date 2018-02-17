@@ -1,6 +1,6 @@
 ---
 title: Building a CPRNG called Terninger - Part 8 The Scheduler
-date: 
+date:  2018-02-17
 tags:
 - Dice
 - Fortuna
