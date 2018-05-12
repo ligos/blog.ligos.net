@@ -1,6 +1,7 @@
 ---
 title: Getting Started With Keybase
 date: 2018-04-28
+updated: 2018-05-13
 tags:
 - Keybase
 - PGP
@@ -534,6 +535,16 @@ If you own a Mac or are using a Linux computer, you won't need to activate Keyba
 But Windows needs an extra component to make things work.
 Phones don't have support for files just yet, which is unfortunate.
 (For the technically minded, this is the only part of Keybase which requires admin rights, as it's installing a [kernel driver](https://en.wikipedia.org/wiki/Kernel-Mode_Driver_Framework) to support a [user mode file system](https://en.wikipedia.org/wiki/Filesystem_in_Userspace)).
+
+**UPDATE May 2018**
+
+Since version 1.0.47 (released in May 2018), Keybase has an in-app files interface.
+That is, you can browse and download files **without** a *K Drive* or `/keybase`.
+This also applies to the mobile app: so you can access and download files on your mobile devices now!
+
+Note that uploading files doesn't seem to be included just yet; perhaps in a future update.
+
+**UPDATE May 2018**
 
 Click over to the *Folders* tab, and there'll be a big red message at the top.
 Click on *Display in Explorer*.
