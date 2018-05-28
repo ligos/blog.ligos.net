@@ -1,6 +1,6 @@
 ---
 title: Building a CPRNG called Terninger - Part 11 Production Use
-date:
+date: 2018-05-28
 tags:
 - Dice
 - Fortuna
