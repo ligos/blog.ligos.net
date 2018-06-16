@@ -1,7 +1,7 @@
 ---
 title: NTP Pool and Mikrotik
 date: 2018-01-29
-updated: 
+updated: 2018-06-16
 tags:
 - Mikrotik
 - Router
@@ -37,6 +37,27 @@ Correct time is very important.
 
 Configure a Mikrotik router to use the [pool.ntp.org public NTP server pool](http://www.pool.ntp.org/en/) in its [NTP client](https://wiki.mikrotik.com/wiki/Manual:System/Time).
 So the clock will be set accurately.
+
+
+## Update June 2018 - An Even Easier Alternative
+
+Apparently, DNS based lookups are already available in Mikrotik routers.
+But only in the **SNTP Client** not the **NTP Client** (note the **S** at the start).
+And if you have manually installed the separate `ntp` package, the **SNTP Client** is hidden.
+
+[SNTP Client Reference](https://wiki.mikrotik.com/wiki/Manual:System/Time#SNTP_client)
+
+**System** -> **SNTP Client**
+
+If you can't find it, check in **System** -> **Packages** for the `ntp` package, and remove it (unless you want your router to be an NTP server - you probably don't).
+You'll need to reboot your router for this to take effect.
+
+In the **SNTP Client**, set your primary and secondary NTP servers to `0.0.0.0`, and *Server DNS Names* to your desired NTP server (eg: `pool.ntp.org`).
+And you're done!
+It may take a 10-60 seconds while it updates your clock.
+
+<img src="/images/NTP-Pool-And-Mikrotik/mikrotik-sntp-client.png" class="" width=300 height=300 alt="SNTP Client " />
+
 
 
 ## An Easier Alternative
