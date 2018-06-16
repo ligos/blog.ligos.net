@@ -106,7 +106,7 @@ At the end of my research, I boil the main point(s) down to a few sentences, so 
 Before I get into actually writing what I intend to say, there are two questions I need to answer:
 
 1. What is the single main point I will be making?
-2. Will deliver the talk from memory, or from paper?
+2. Will I deliver the talk from memory, or from paper?
 
 The second question is usually pretty easy to answer (most sermons are from paper, but kids talks, outdoor talks, or more interactive presentations need to be from memory).
 And if I have to deliver the presentation from memory, then it never goes to paper (so I am forced to remember it).
