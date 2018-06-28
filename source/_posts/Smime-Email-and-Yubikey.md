@@ -2,7 +2,6 @@
 title: S/MIME, Email and Yubikey
 date: 2017-01-02
 updated: 2018-06-28
-updated: 
 tags:
 - SMIME
 - S/MIME
