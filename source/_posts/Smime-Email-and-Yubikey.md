@@ -1,6 +1,7 @@
 ---
 title: S/MIME, Email and Yubikey
 date: 2017-01-02
+updated: 2018-06-28
 updated: 
 tags:
 - SMIME
@@ -16,6 +17,15 @@ categories: Technical
 Sign your emails and save your certificate on a Yubikey.
 
 <!-- more --> 
+
+**UPDATE 2018-06-28**
+
+The [eM Client](https://www.emclient.com/) email program has been updated since original publication (I'm now using version 7.1.31849).
+It's support for S/MIME has improved (supporting SHA256 and AES), but it now manages its own certificate store.
+Which means my Yubikey isn't required to sign emails; eM Client does everything itself - which isn't as secure as using the Yubikey to protect the certificate.
+
+**END UPDATE**
+
 
 ## Background
 
@@ -163,7 +173,7 @@ But left the encrypt by default box unticked.
 
 <img src="/images/Smime-Email-and-Yubikey/eMClient-smime.png" class="" width=300 height=300 alt="Configure The Certificate." />
 
-Unfortunately, eM Client only supports 3DES and SHA1 (rather than the more modern AES and SHA2 functions) at the time of writing.
+Unfortunately, eM Client only supports 3DES and SHA1 (rather than the more modern AES and SHA2 functions) at the time of writing (**UPDATE** version 7.1 of eM Client supports AES and SHA2).
 Which is OK for my purposes, and it appears they are [planning to support other algorithms](https://forum.emclient.com/emclient/topics/s_mime_algorithms).
 
 ## 5. Send A Signed Email
@@ -221,6 +231,8 @@ So far, the certificate is stored in the Windows Certificate Store (which I happ
 
 That's nice, but it doesn't make any use of the shiny new Yubikey I just got.
 (Note: if you don't have a Yubikey, you can quite safely stop here and get all the benefits of S/MIME signatures).
+
+**UPDATE:** version 7.1 of eM Client uses its own certificate store, so it doesn't use my YubiKey any more.
 
 
 To copy the certificate to your Yubikey, download and install the [Yubikey PIV Manager](https://developers.yubico.com/yubikey-piv-manager/).
