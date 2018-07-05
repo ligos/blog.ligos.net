@@ -111,7 +111,7 @@ You can find the *Add Windows Features* section in Server Manager -> Local Serve
 
 * IIS and it's required modules for hosting ASP.NET and static content.
 * [Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx) and [Application Request Routing](https://www.iis.net/downloads/microsoft/application-request-routing) - used for redirects.
-* And my [IIS 10 SSL best practices script](iis10_tls_best_practices.ps1) - to get the HTTPS stack up to scratch (based on [Alexander Hass's script for IIS 8.5](http://www.hass.de/content/setup-your-iis-ssl-perfect-forward-secrecy-and-tls-12)).
+* And my [IIS 10 SSL best practices script](/images/On-Self-Hosting-Outages-and-Azure/iis10_tls_best_practices.ps1) - to get the HTTPS stack up to scratch (based on [Alexander Hass's script for IIS 8.5](http://www.hass.de/content/setup-your-iis-ssl-perfect-forward-secrecy-and-tls-12)).
 
 <img src="/images/On-Self-Hosting-Outages-and-Azure/vm-add-iis-features.png" class="" width=300 height=300 alt="Add IIS Features" />
 
