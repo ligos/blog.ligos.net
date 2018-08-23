@@ -1,6 +1,6 @@
 ---
 title: Building a CPRNG called Terninger - Part 12 Porting to .NET Standard
-date: 
+date: 2018-08-23
 tags:
 - Dice
 - Fortuna
