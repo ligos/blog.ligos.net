@@ -1,7 +1,7 @@
 ---
 title: S/MIME, Email and Yubikey
 date: 2017-01-02
-updated: 2018-06-28
+updated: 2018-08-31
 tags:
 - SMIME
 - S/MIME
@@ -22,6 +22,10 @@ Sign your emails and save your certificate on a Yubikey.
 The [eM Client](https://www.emclient.com/) email program has been updated since original publication (I'm now using version 7.1.31849).
 It's support for S/MIME has improved (supporting SHA256 and AES), but it now manages its own certificate store.
 Which means my Yubikey isn't required to sign emails; eM Client does everything itself - which isn't as secure as using the Yubikey to protect the certificate.
+
+**UPDATE 2018-08-31**
+
+I've updated the client side support: Google's apps now support S/MIME.
 
 **END UPDATE**
 
@@ -180,7 +184,7 @@ Which is OK for my purposes, and it appears they are [planning to support other 
 Then I wrote a test email, and sent it to my other email account.
 As I wanted to see what it looks like in other mail clients.
 
-I soon found that S/MIME support isn't that wide spread.
+I soon found that S/MIME support <strike>isn't that wide spread in 2017</strike> is pretty good, as at August 2018.
 
 ### eM Client - Supported
 
@@ -195,28 +199,47 @@ Again, you get a little badge, but no email address next to it (in fairness, the
 
 <img src="/images/Smime-Email-and-Yubikey/windows-live-signed-email.png" class="" width=300 height=300 alt="Signed emails have a coloured badge, but no email address." />
 
-### Windows Mail - Not Supported
+### Windows Mail - Not Supported (even in 2018)
 
-The new Windows Mail client doesn't seem to support S/MIME signed by public certificates.
+The new Windows Mail client doesn't seem to support S/MIME signed by public certificates (even in 2018).
 I'm guessing it only works for internal Exchange Server certificates.
 Instead, you see an unusual attachment, which I presume are attached certificates required to verify the email.
 Fortunately, the content of the email is still readable.
 
 <img src="/images/Smime-Email-and-Yubikey/windows-mail-email-signed.png" class="" width=300 height=300 alt="Signed emails have nothing." />
 
-### GMail Web - Not Supported
+### GMail Web - Supported (in August 2018)
 
-Again, GMail has nothing special.
-Just the unusual attachment.
+Since at least August 2018, GMail shows the certificate details.
+You have to dig into a little "extra details" icons to find it though, there's nothing to indicate a signature in the default view.
+And click *Sender info* and you'll see the certificate details.
 
-<img src="/images/Smime-Email-and-Yubikey/gmail-signed-email.png" class="" width=300 height=300 alt="Nothing for GMail either." />
+<img src="/images/Smime-Email-and-Yubikey/gmail-signed-email-2018.png" class="" width=300 height=300 alt="Click the tiny icon and you get a green tick!" />
 
-### GMail Android App - Not Supported
+[See original screenshot from 2017](/images/Smime-Email-and-Yubikey/gmail-signed-email.png).
 
-If the GMail web app doesn't support S/MIME, it's not surprising that the GMail Android app doesn't either.
 
-<img src="/images/Smime-Email-and-Yubikey/gmail-app-signed-email.png" class="" width=300 height=300 alt="And nothing for the GMail App." />
+### GMail Android App - Supported (in August 2018)
 
+Again, since August 2018, the Android GMail app gives a green tick once you tab *Show details*.
+Nothing in the default view.
+And a *Sender info* for certificate details as well.
+
+<img src="/images/Smime-Email-and-Yubikey/gmail-app-signed-email-2018.png" class="" width=300 height=300 alt="And nothing for the GMail App." />
+
+[See original screenshot from 2017](/images/Smime-Email-and-Yubikey/gmail-app-signed-email.png).
+
+
+### MS Outlook - Supported (in August 2018)
+
+I didn't show MS Outlook in the original article (because I only use it at work), but I remember S/MIME was supported back then.
+For completeness, here's a signed email in whatever version of Outlook my work computer has.
+
+<img src="/images/Smime-Email-and-Yubikey/outlook-signed-email-2018.png" class="" width=300 height=300 alt="Outlook gives you a red / orange ribbon for receiving signed emails." />
+
+
+**Update August 2018**: S/MIME support seems considerably better in 2018, and my original goal is still valid as well.
+Everyone can still read my email, and now more people can see it's been signed by me.
 
 It's possible that the email clients which don't show the message as signed are doing that because of the obsolete SHA1 hash algorithm.
 Although, if that was the case, I'd expect nasty red banners saying the signature isn't valid.
@@ -281,11 +304,14 @@ After adding and removing the certificate from both the Windows certificate stor
 
 ## 7. Sending an Email With Yubikey
 
-Once the certificate is loading in your Yubikey, you need it present to send signed emails.
+With eM Client 7.1, none of the below applies any more.
+The certificate is managed entirely by eM Client, and the Yubikey doesn't come into play.
 
-The process to send an email is exactly the same as before, but Windows asks for a smart-card and the PIN for it.
+<strike>Once the certificate is loading in your Yubikey, you need it present to send signed emails.</strike>
+
+<strike>The process to send an email is exactly the same as before, but Windows asks for a smart-card and the PIN for it.
 If your Yubikey is already plugged in, you are just prompted for the PIN.
-Otherwise, you are asked for the smart-card as well (which Windows 10 seems to handle pretty well).
+Otherwise, you are asked for the smart-card as well (which Windows 10 seems to handle pretty well).</strike>
 
 <img src="/images/Smime-Email-and-Yubikey/pin-requested-sending-signed-email.png" class="" width=300 height=300 alt="Certificate Loaded in the Digital Signature Slot." />
 
@@ -298,4 +324,4 @@ Signing emails using S/MIME works nicely, if you have the right email client.
 The main benefit is to prove that you really did write what you said you wrote.
 That is, to assure your recipients that your emails don't have a forged `from` field (which usually indicates its spam or contains a malicious attachment / link).
 
-And the Yubikey locks the certificate up, so, even if your computer does have malware, it's really hard for it to send emails signed by you.
+<strike>And the Yubikey locks the certificate up, so, even if your computer does have malware, it's really hard for it to send emails signed by you.</strike>
