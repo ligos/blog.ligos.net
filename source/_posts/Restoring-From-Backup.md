@@ -53,7 +53,7 @@ My phone can be used to get my personal email, even if its not as good as a full
 And, because my mail is hosted with Google, I can use [gmail.com](https://mail.google.com) to access it from anywhere (although it never came to that).
 
 My [paid work](https://faredge.com.au) is mostly in my office.
-Wen I'm working from home, I use Remote Desktop Connection to connect to my work computer - which is available on every Windows PC since Windows XP. 
+When I'm working from home, I use Remote Desktop Connection to connect to my work computer - which is available on every Windows PC since Windows XP. 
 My connection to the work network is an IPsec VPN via my [Mikrotik router](https://mikrotik.com), which wasn't affected.
 I use a softphone app called [MicroSIP](http://www.microsip.org/), which needs a USB headset and a few minutes of configuration.
 
@@ -131,11 +131,11 @@ The following is a list of places apps commonly get installed:
 I spent a Saturday downloading and installing around 20GB of apps and updates (on and off through the day).
 That's much more than most people would need - I installed [Visual Studio](https://www.visualstudio.com/) (~8GB) and [Logos Bible Software](https://www.logos.com) (~7GB), which make up the bulk of my downloads.
 
-And then I needed to entering account details for most of these apps.
+And then I needed to enter account details for most of these apps.
 All those details were recorded in my [KeePass](https://keepass.info/) password database.
 
 
-### 3. Restore Files From Backup
+### 4. Restore Files From Backup
 
 Although I had 3 separate backups of my old laptop, I didn't use them.
 The only one I needed was the VHD disk image.
@@ -152,7 +152,7 @@ I decided to make use of [OneDrive](https://onedrive.live.com/) for all my Docum
 I'm aware Microsoft can see all my stuff, but I a) prefer an extra backup over the potential loss of privacy, and b) I can still use my Local Documents for things I want to keep private, and c) I have an encrypted VHD on my computer for really sensitive things.
 
 
-### 4. Keep Installing Things I Forgot
+### 5. Keep Installing Things I Forgot
 
 At this point, all my critical apps are running.
 KeePass, email (with [certificates](/2017-01-02/SMIME-Email-and-Yubikey.html)), web browsers, Office, Visual Studio (and other development tools), DropBox, media players, 
