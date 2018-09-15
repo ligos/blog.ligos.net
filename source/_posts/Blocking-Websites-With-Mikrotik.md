@@ -1,6 +1,6 @@
 ---
 title: Blocking Websites with Mikrotik
-date: 
+date: 2018-09-16
 tags:
 - Mikrotik
 - Firewall
@@ -11,7 +11,7 @@ tags:
 categories: Technical
 ---
 
-How to stop <strike>your kids</strike> people accessing YouTube (and other sites).
+How to stop people accessing YouTube (and other sites).
 
 <!-- more --> 
 
