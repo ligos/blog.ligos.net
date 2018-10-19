@@ -349,7 +349,7 @@ This might be down to the TLS hostname limitation, but seems more likely to be d
 QUIC is available in Chrome (although doesn't appear to be widely enabled by default) and uses a UDP based protocol, which completely bypasses the Mikrotik's TLS Host rule (which only applies to TCP connections) (thanks to the comment by *Jot Z* for bringing QUIC to my attention).
 HTTP/2 still uses TCP, but seems to keep connections open for much longer.
 As the firewall only attempts to block on the initial connection, once you establish a long HTTP/2 based connection to YouTube, you're basically home free.
-
+And [TLS 1.3](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.3) has been finalised and is gaining use, which simplifies the server handshake and I suspect is contributing to problems here as well.
 
 
 <hr />
