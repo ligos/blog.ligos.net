@@ -1,6 +1,7 @@
 ---
 title: Blocking Websites with Mikrotik
 date: 2018-09-16
+updated: 2018-10-19
 tags:
 - Mikrotik
 - Firewall
@@ -23,6 +24,7 @@ That will give us Internet access for laptops and a desktop.
 However, my kids (and adults, if we're honest with ourselves) love watching YouTube videos.
 But they have no sense of how much data these can consume, and there's no such thing as unlimited (or even "unlimited" [but-not-really-unlimited](https://www.whistleout.com/CellPhones/Guides/Fact-A-Truly-Unlimited-Data-Plan-Doesnt-Exist)) mobile data in Australia. 
 
+**Update 2018-10-19:** I've added an *effectiveness* section to each technique I've described here, based on my experience over the last few months.
 
 ## Goal
 
@@ -148,7 +150,7 @@ But for our purposes, we'll just add a new IP address to the router and reject a
 
 #### Pros, Cons and Effectiveness
 
-*Does it stop my kids?* - Yes!
+*Does it stop my kids?* - Mostly.
 
 *Works with IPv6?* - Yes! Add an IPv6 address in DNS just like IPv4.
 
@@ -165,6 +167,15 @@ But for our purposes, we'll just add a new IP address to the router and reject a
 * All or nothing - either everyone is blocked, or no one. You can't allow one computer and block another.
 * Pretty easy to bypass - just set your DNS servers on your computer to [Quad9](https://www.quad9.net/) or [Cloudflare DNS](https://cloudflare-dns.com/) or [Google's Public DNS](https://developers.google.com/speed/public-dns/) and you've bypassed the block.
 * Double entry - you need to add an IPv4 and and and IPv6 address for anything you want to block.
+
+*Effectiveness:*
+
+This was the most effective of all blocking techniques.
+Only problem is the DNS names used by the YouTube Android app are different to the ones used by [www.youtube.com](https://www.youtube.com).
+So it was easy to block kids on PCs, but not so easy to block kids on phones and tablets.
+Oh, and don't forget to change the TTL on your static DNS entries to 5 minutes, otherwise turning the rules on and off is problematic.
+Otherwise, it worked really well.
+
 
 <hr />
 
@@ -232,7 +243,7 @@ If you want to cover IPv6 (like me) just do the same in the IPv6 firewall as wel
 
 #### Pros, Cons and Effectiveness
 
-*Does it stop my kids?* - Yes! 
+*Does it stop my kids?* - Not really. 
 
 *Works with IPv6?* - Yes, but you need to add separate rules for the IPv6 firewall.
 
@@ -251,6 +262,17 @@ If you want to cover IPv6 (like me) just do the same in the IPv6 firewall as wel
 * Address Lists don't support regexes, which means you have to list every site name you want blocked.
 * No regexes means you can't block whole sub-domains, which makes this ineffective against advertising / tracking sites.
 
+*Effectiveness:*
+
+This didn't really work for YouTube, and had unintended side-effects for [iView](https://iview.abc.net.au).
+
+The problem with YouTube is the dynamic firewall names never covered all IP addresses required.
+Either the dynamic addresses expired too quickly and weren't refreshed, or not enough addresses were added to the firewall.
+So it would block really well for around 5 minutes, and then about 50% of the time for the next 15 minutes, and less than 50% after that.
+
+ABC iView didn't have this problem because it only had a few IP addresses, so the dynamic addresses worked and blocked effectively.
+Unfortunately, the same IP that hosts iView also hosts content for the [ABC News](https://www.abc.net.au/news/) Android app.
+So blocking iView by IP address also blocks my main news outlet.
 
 <hr />
 
@@ -301,7 +323,7 @@ And you can enable regexes to match sub-domains.
 
 #### Pros, Cons and Effectiveness
 
-*Does it stop my kids?* - Maybe, I haven't really tested it.
+*Does it stop my kids?* - Not reliably.
 
 *Works with IPv6?* - Yes, but you need to add separate rules for the IPv6 firewall.
 
@@ -318,6 +340,17 @@ And you can enable regexes to match sub-domains.
 * Quite complicated compared to other options.
 * Have to add sites in two quite different parts of the router.
 * Untested.
+
+*Effectiveness:*
+
+I tried the TLS Hosts based blocking for YouTube and found it is rather hit and miss.
+The rule would be hit sometimes (based on statistics logged in the router) but not always (based on my kids still able to access YouTube).
+This might be down to the TLS hostname limitation, but seems more likely to be due to [HTTP/2](https://en.wikipedia.org/wiki/HTTP/2) and [QUIC](https://en.wikipedia.org/wiki/QUIC).
+QUIC is available in Chrome (although doesn't appear to be widely enabled by default) and uses a UDP based protocol, which completely bypasses the Mikrotik's TLS Host rule (which only applies to TCP connections) (thanks to the comment by *Jot Z* for bringing QUIC to my attention).
+HTTP/2 still uses TCP, but seems to keep connections open for much longer.
+As the firewall only attempts to block on the initial connection, once you establish a long HTTP/2 based connection to YouTube, you're basically home free.
+
+
 
 <hr />
 
@@ -381,9 +414,13 @@ And in the end, the I'm only blocking a handful os sites.
 
 ## Conclusion
 
-I've ended up choosing the *Firewall Address Lists* option for blocking YouTube.
+<strike>I've ended up choosing the *Firewall Address Lists* option for blocking YouTube.
 Plus, using TLS Host based firewall rules to block sub-domains with video content.
-This should keep my holiday Internet usage to manageable levels.
+This should keep my holiday Internet usage to manageable levels.</strike>
+
+After going on my holiday and testing the various techniques for a few months,
+I ended up changing to DNS sinkhole for blocking.
+This works really well and is quite easy to turn on and off quickly.
 
 The DNS sinkhole option looks good for blocking ads and tracking sites.
 And [Pi-Hole](https://pi-hole.net/) looks like the best way to manage that.
