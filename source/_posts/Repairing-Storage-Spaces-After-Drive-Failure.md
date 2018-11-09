@@ -98,7 +98,7 @@ All your data is gone.
 (In other words: RAID5 isn't safe for use these days).
 Oh, and all Microsoft's high end servers do triple mirroring; so safe to say parity just isn't a good idea these days.
 
-**5. Don't re-use old disks without wiping first**.
+**5. (Added 2018-11-10) Don't re-use old disks without wiping first**.
 Storage Spaces magically knows what disks are in any pool based on metadata stored on each disk.
 That's how it knows which disks are in a pool, and can tell you everything about a pool with just one disk available.
 Unfortunately, it appears if you re-use disks from different pools, bad things can happen.
