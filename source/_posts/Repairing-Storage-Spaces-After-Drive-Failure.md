@@ -1,6 +1,7 @@
 ---
 title: Repairing Storage Spaces After a Drive Failure
 date: 2017-12-11
+updated: 2018-11-10
 tags:
 - Crash
 - Hardware
@@ -96,6 +97,14 @@ If that happens your array cannot rebuild.
 All your data is gone.
 (In other words: RAID5 isn't safe for use these days).
 Oh, and all Microsoft's high end servers do triple mirroring; so safe to say parity just isn't a good idea these days.
+
+**5. Don't re-use old disks without wiping first**.
+Storage Spaces magically knows what disks are in any pool based on metadata stored on each disk.
+That's how it knows which disks are in a pool, and can tell you everything about a pool with just one disk available.
+Unfortunately, it appears if you re-use disks from different pools, bad things can happen.
+So, whenever adding disks to a pool, make sure you [wipe them first](https://dban.org/).
+(See Štěpán's unfortunate story in the comments for all the details).
+
 
 The unfortunate consequence of these rules is you need about three times the number of disks as compared to not using Storage Spaces.
 That is two disks to get benefits of mirroring, and another disk as a backup.
