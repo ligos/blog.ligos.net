@@ -1,6 +1,7 @@
 ---
 title: Create Another WiFi Network on a Mikrotik Router
 date: 2016-10-04
+updated: 2018-11-10
 tags:
 - Mikrotik
 - Network
@@ -163,43 +164,32 @@ And the domain to `ligos.local`.
 
 ```
 
-### 5. Assign an IPv6 Pool and Address
+### 5. Assign an IPv6 <strike>Pool and</strike> Address
 
 I also have a public IPv6 range assigned by my ISP, so I add an IPv6 address as well.
-You need to create an IPv6 pool first, based on your public address assignment, before you can advertise it on an interface or assign an address.
+
+<strike>You need to create an IPv6 pool first, based on your public address assignment, before you can advertise it on an interface or assign an address.</strike>
 Also, because there's much more auto discovery built into IPv6, config is much less complicated.
 
-Goto **IPv6** -> **Pool** and then add a new pool.
+**Update 2018-11-10:** Mikrotik now validates overlapping address pools, so you should just add new addresses which use the public pool. 
 
-I'm simply assigning `/64` subnets (from my `/56` public allocation) to each network.
-This gives me 255 subnets for 255 networks (which is plenty, given I don't event have 255 devices!) 
-There's no static assignments, so no address range exclusions like for IPv4.
-
-<img src="/images/Create-Another-Network-On-A-Mikrotik/ipv6-pool.png" class="" width=300 height=300 alt="The IPv6 Pool" />
-
-```
-[admin@Mikrotik-gateway] /ipv6 pool> print
-Flags: D - dynamic 
- #   NAME                         PREFIX                           
- 3   phones-ipv6-pool             2001:44b8:3168:9b03::/64  
-```
-
-Now, goto **IPv6** -> **Address**.
+Goto **IPv6** -> **Address**.
 You'll note that link local addresses (starting with `fe80`) have been dynamically created for your new interface.
 This is totally normal. 
 
 Now, add a new address.
-I use the same address for the router as for the pool.
-And set the correct pool and interface.
 
 <img src="/images/Create-Another-Network-On-A-Mikrotik/ipv6-address.png" class="" width=300 height=300 alt="The IPv6 Address" />
+
+Note, RouterOS version 6.43.4 seems to ignore whatever prefix you type in (the bit between the `/56` your ISP assigns you and the `::1/64`) and assign the next highest one.
+I'm not sure if that's by design or a bug, but its a little annoying.
 
 ```
 [admin@Mikrotik-gateway] /ipv6 address> print
 Flags: X - disabled, I - invalid, D - dynamic, G - global, L - link-local 
  #    ADDRESS                        FROM-POOL INTERFACE     ADVERTISE
  8 DL fe80::4c5e:cff:feb8:d8d1/64              wlan-phones   no       
- 9  G 2001:44b8:3168:9b03::/64       phones... wlan-phones   yes      
+ 9  G 2001:44b8:3168:9b09::1/64      public... wlan-phones   yes      
 ```
 
 ### 6. Add Firewall Rules

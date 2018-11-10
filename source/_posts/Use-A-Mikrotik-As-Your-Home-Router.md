@@ -1,7 +1,7 @@
 ---
 title: Use a Mikrotik as Your Home Router
 date: 2017-02-16
-updated: 2017-04-01
+updated: 2018-11-10
 tags:
 - Mikrotik
 - Router
@@ -637,7 +637,7 @@ Next step is to assign a public IPv6 address to your router.
 (Note that your router will already have link local IPv6 addresses starting with `fe80`, that is normal).
 
 In *IPv6 -> Addresses*, add a new address.
-You can set the right-hand part of the address to be whatever you want, but I use the same address as the network mask (making my router device 0 on my network).
+You enter your public address, and then give your router an address such as `00::1/64`, which makes my router's address `2001:44b8:3168:9b00::1/64`.
 Select your LAN bridge as the interface to assign to.
 And the *pool* you just created from DHCP.
 Finally, make sure you enable *Advertise*, as that is the way your devices will get IPv6 addresses (via router advertisements).
@@ -689,15 +689,18 @@ And from here, you can enjoy IPv6 connections to [Facebook](https://www.facebook
 Probably without noticing any difference at all.
 
 
-#### 6f - Another Pool for Another Network
+#### 6f - Another <strike>Pool</strike> Address for Another Network
 
-Finally, if you have a guest network configured with a separate IPv4 subnet, you can assign a second IPv6 subnet to it as well.
+**Update 2018-11-10:** Mikrotik now validates overlapping address pools, so you should just add new addresses which use the public pool. 
 
-All you need to do is add a new pool, with the next IPv6 subnet (for me, that would be `2001:44b8:3168:9b01::/64`).
-Then, just like you did before, add a new IPv6 address to your guest interface, and enable router advertisements from it.
+If you want IPv6 support on a separate network, just give that interface a new IPv6 address from the public pool.
+And tick the *advertise* box.
+Eg: `2001:44b8:3168:9b01::1/64`
 
-<img src="/images/Use-A-Mikrotik-As-Your-Home-Router/ipv6-pool.png" class="" width=300 height=300 alt="IPv6 Pool" />
+Note, RouterOS version 6.43.4 seems to ignore whatever prefix you type in (the bit between the `/56` your ISP assigns you and the `::1/64`) and assign the next highest one.
+I'm not sure if that's by design or a bug, but its a little annoying.
 
+<img src="/images/Use-A-Mikrotik-As-Your-Home-Router/ipv6-next-address.png" class="" width=300 height=300 alt="IPv6 Address for another network" />
 
 
 ## Extra Functions
