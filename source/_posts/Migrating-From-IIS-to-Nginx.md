@@ -1,5 +1,5 @@
 ---
-title: Migranting from IIS to Nginx
+title: Migrating from IIS to Nginx
 date: 2019-03-09
 tags:
 - Linux
