@@ -1224,7 +1224,7 @@ The following sources were used when making this article:
 * [Gentoo Linux Documentation](https://wiki.gentoo.org/wiki/ZFS) - Another ZFS overview, from Gentoo this time.
 * [ZFS Best Practices Guide](https://www.serverfocus.org/zfs-best-practices-guide) - From ServerFocus, and lists a whole stack of things to keep in mind.
 * [OpenZFS Basics by Matt Ahrens and George Wilson](https://www.youtube.com/watch?v=MsY-BafQgj4) - YouTube video.
-https://www.youtube.com/watch?v=x9A0dX2WqW8 - Today's ZFS Michael W Lucas
+* [Today's ZFS Michael W Lucas](https://www.youtube.com/watch?v=x9A0dX2WqW8) - YouTube video.
 
 ## Conclusion
 
