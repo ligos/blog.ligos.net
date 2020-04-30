@@ -298,6 +298,7 @@ Some tips:
 
 Unlike face-to-face meetings, getting the technology working well can make or break online meetings.
 
+* Put your device in landscape mode. That means sideways (horizontal), not up-and-down (vertical). Even on a phone, most people will watch a meeting in landscape, and anyone on a laptop or computer will have a widescreen view.
 * There's a big difference between phone / tablet apps and desktop / laptop apps. Most phones / tablets will show video from 4 other participants, while their desktop counterparts can show an unlimited number. If you're using your phone / iPad / tablet and finding the experience lacklustre, try your laptop.
 * If you're the host, you really need to use a laptop or desktop. The mobile apps aren't up to scratch.
 * If multiple people are connecting from one place, they either need to a) use a shared device without a headset, or b) use separate devices with earbuds / headset in separate rooms.
