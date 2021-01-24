@@ -1,0 +1,117 @@
+# jan/07/2021 10:35:45 by RouterOS 6.48
+# software id = 1W2X-YDA5
+#
+# model = RBD52G-5HacD2HnD
+# serial number = D7180C6A8E30
+/interface bridge
+add admin-mac=48:8F:5A:CC:E5:D7 auto-mac=no name=bridge-primary
+add name=bridge-streaming
+/interface ethernet
+set [ find default-name=ether1 ] name=ether1-uplink
+set [ find default-name=ether2 ] name=ether2-primary
+set [ find default-name=ether5 ] name=ether5-internet
+/interface wireless
+set [ find default-name=wlan1 ] band=2ghz-b/g/n channel-width=20/40mhz-XX \
+    distance=indoors frequency=auto installation=indoor mode=ap-bridge name=\
+    wlan24-primary ssid=MikroTik-CCE5DB station-roaming=enabled \
+    wireless-protocol=802.11
+/interface list
+add comment=defconf name=WAN
+add comment=defconf name=LAN
+/interface wireless security-profiles
+set [ find default=yes ] supplicant-identity=MikroTik
+add authentication-types=wpa2-psk eap-methods="" mode=dynamic-keys name=\
+    wifi-techteam supplicant-identity="" wpa2-pre-shared-key=SECRETPASSWORD
+/interface wireless
+set [ find default-name=wlan2 ] band=5ghz-n/ac country=australia disabled=no \
+    distance=indoors frequency=auto installation=indoor mode=ap-bridge \
+    multicast-helper=full name=wlan50-primary radio-name=TechTeam-bdr01 \
+    security-profile=wifi-techteam ssid=CMSTechTeam station-roaming=enabled \
+    wireless-protocol=802.11 wps-mode=disabled
+/queue type
+add kind=sfq name=sfq-normal
+/queue simple
+add dst=ether5-internet max-limit=8M/30M name=queue-internet-primary queue=\
+    sfq-normal/sfq-normal target=bridge-primary
+/interface bridge filter
+add action=drop chain=forward dst-port=4321 ip-protocol=udp mac-protocol=ip
+add action=drop chain=forward dst-port=9998 ip-protocol=udp mac-protocol=ip
+add action=drop chain=forward dst-port=319-320 ip-protocol=udp mac-protocol=\
+    ip
+add action=drop chain=forward dst-port=8708 ip-protocol=udp mac-protocol=ip
+/interface bridge port
+add bridge=bridge-primary interface=ether2-primary
+add bridge=bridge-streaming interface=ether4
+add bridge=bridge-primary interface=wlan24-primary
+add bridge=bridge-primary interface=wlan50-primary
+add bridge=bridge-primary interface=ether1-uplink
+/ip neighbor discovery-settings
+set discover-interface-list=LAN
+/interface list member
+add comment=defconf interface=bridge-primary list=LAN
+add comment=defconf interface=ether5-internet list=WAN
+add interface=bridge-streaming list=LAN
+/ip address
+add address=192.168.16.254/24 interface=bridge-primary network=192.168.16.0
+/ip dhcp-client
+add disabled=no interface=ether5-internet use-peer-dns=no use-peer-ntp=no
+/ip dns
+set allow-remote-requests=yes servers=1.1.1.1,9.9.9.9
+/ip firewall filter
+add action=fasttrack-connection chain=forward comment=\
+    "Fasttrack LAN traffic only (otherwise queues have no effect)" \
+    connection-state=established,related in-interface-list=LAN \
+    out-interface-list=LAN
+add action=accept chain=forward connection-state=established,related \
+    in-interface-list=LAN out-interface-list=LAN
+add action=passthrough chain=input comment="Incoming Stats" \
+    in-interface-list=WAN
+add action=passthrough chain=forward in-interface-list=WAN out-interface=\
+    bridge-primary
+add action=passthrough chain=forward in-interface-list=WAN out-interface=\
+    bridge-streaming
+add action=passthrough chain=output comment="Outgoing Stats" \
+    out-interface-list=WAN
+add action=passthrough chain=forward in-interface=bridge-primary \
+    out-interface-list=WAN
+add action=passthrough chain=forward in-interface=bridge-streaming \
+    out-interface-list=WAN
+add action=accept chain=input comment=\
+    "defconf: accept established,related,untracked" connection-state=\
+    established,related,untracked
+add action=drop chain=input comment="defconf: drop invalid" connection-state=\
+    invalid
+add action=accept chain=input comment="defconf: accept ICMP" protocol=icmp
+add action=accept chain=output protocol=icmp
+add action=accept chain=forward protocol=icmp
+add action=accept chain=input comment=\
+    "defconf: accept to local loopback (for CAPsMAN)" dst-address=127.0.0.1
+add action=accept chain=input comment="Allow L2PT / IPSec VPN access" \
+    dst-port=500,1701,4500 in-interface-list=WAN protocol=udp
+add action=accept chain=input in-interface-list=WAN protocol=ipsec-esp
+add action=accept chain=input in-interface-list=WAN protocol=ipsec-ah
+add action=accept chain=forward comment="defconf: accept in ipsec policy" \
+    ipsec-policy=in,ipsec
+add action=accept chain=forward comment="defconf: accept out ipsec policy" \
+    ipsec-policy=out,ipsec
+add action=accept chain=input comment="Allow DNS for LAN" dst-port=53 \
+    in-interface-list=LAN protocol=tcp
+add action=accept chain=input dst-port=53 in-interface-list=LAN protocol=udp
+add action=drop chain=input comment="defconf: drop all not coming from LAN" \
+    in-interface-list=!LAN
+add action=drop chain=forward comment="defconf: drop invalid" \
+    connection-state=invalid
+add action=drop chain=forward comment=\
+    "defconf: drop all from WAN not DSTNATed" connection-nat-state=!dstnat \
+    connection-state=new in-interface-list=WAN
+/ip firewall nat
+add action=masquerade chain=srcnat comment="defconf: masquerade" \
+    ipsec-policy=out,none out-interface-list=WAN
+/system clock
+set time-zone-name=Australia/Sydney
+/system identity
+set name=bdr01-gateway
+/tool mac-server
+set allowed-interface-list=LAN
+/tool mac-server mac-winbox
+set allowed-interface-list=LAN

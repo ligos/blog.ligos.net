@@ -1,0 +1,84 @@
+# jan/07/2021 10:34:43 by RouterOS 6.48
+# software id = MZP4-8XRS
+#
+# model = CRS328-24P-4S+
+# serial number = D7630C8C7A51
+/interface ethernet
+set [ find default-name=ether1 ] name=ether1-primary-WirelessMic-Remote
+set [ find default-name=ether2 ] name=ether2-primary-WirelessMic-Audio
+set [ find default-name=ether3 ] name=ether3-primary-ap01
+set [ find default-name=ether4 ] name=ether4-primary
+set [ find default-name=ether5 ] name=ether5-primary-SongWords
+set [ find default-name=ether6 ] name=ether6-primary-ToFoH
+set [ find default-name=ether7 ] name=ether7-primary-ToVideoland
+set [ find default-name=ether8 ] name=ether8-primary
+set [ find default-name=ether9 ] name=ether9-primary-X32-Foldback-Remote
+set [ find default-name=ether10 ] name=ether10-primary
+set [ find default-name=ether11 ] name=ether11-primary-X32-Foldback-Audio
+set [ find default-name=ether12 ] name=ether12-primary
+set [ find default-name=ether13 ] name=ether13-primary
+set [ find default-name=ether14 ] name=ether14-primary-SpeakerStageLeft-AVIO
+set [ find default-name=ether15 ] name=ether15-primary-Comms-AVIO
+set [ find default-name=ether16 ] name=ether16-primary
+set [ find default-name=ether17 ] name=ether17-secondary
+set [ find default-name=ether18 ] name=ether18-secondary-WirelessMics
+set [ find default-name=ether19 ] name=ether19-secondary
+set [ find default-name=ether20 ] name=ether20-secondary-X32-Foldback
+set [ find default-name=ether21 ] name=ether21-secondary
+set [ find default-name=ether22 ] name=ether22-secondary
+set [ find default-name=ether23 ] name=ether23-secondary-ToFoH
+set [ find default-name=ether24 ] name=ether24-secondary-ToVideoland
+/interface bridge
+add admin-mac=48:8F:5A:9A:AC:1D auto-mac=no name=bridge-primary
+add name=bridge-secondary
+/ip pool
+add name=pool-primary-audio ranges=192.168.16.100-192.168.16.199
+add name=pool-secondary-audio ranges=192.168.17.100-192.168.17.199
+/ip dhcp-server
+add address-pool=pool-primary-audio disabled=no interface=bridge-primary \
+    lease-time=6h name=dhcp-primary
+add address-pool=pool-secondary-audio disabled=no interface=bridge-secondary \
+    lease-time=6h name=dhcp-primary-secondary
+/interface bridge port
+add bridge=bridge-primary interface=ether1-primary-WirelessMic-Remote
+add bridge=bridge-primary interface=ether2-primary-WirelessMic-Audio
+add bridge=bridge-primary interface=ether3-primary-ap01
+add bridge=bridge-primary interface=ether4-primary
+add bridge=bridge-primary interface=ether5-primary-SongWords
+add bridge=bridge-primary interface=ether6-primary-ToFoH
+add bridge=bridge-primary interface=ether7-primary-ToVideoland
+add bridge=bridge-primary interface=ether8-primary
+add bridge=bridge-primary interface=ether9-primary-X32-Foldback-Remote
+add bridge=bridge-primary interface=ether10-primary
+add bridge=bridge-primary interface=ether11-primary-X32-Foldback-Audio
+add bridge=bridge-primary interface=ether12-primary
+add bridge=bridge-primary interface=ether13-primary
+add bridge=bridge-primary interface=ether14-primary-SpeakerStageLeft-AVIO
+add bridge=bridge-primary interface=ether15-primary-Comms-AVIO
+add bridge=bridge-primary interface=ether16-primary
+add bridge=bridge-secondary interface=ether17-secondary
+add bridge=bridge-secondary interface=ether18-secondary-WirelessMics
+add bridge=bridge-secondary interface=ether19-secondary
+add bridge=bridge-secondary interface=ether20-secondary-X32-Foldback
+add bridge=bridge-secondary interface=ether21-secondary
+add bridge=bridge-secondary interface=ether22-secondary
+add bridge=bridge-secondary interface=ether23-secondary-ToFoH
+add bridge=bridge-secondary interface=ether24-secondary-ToVideoland
+/ip neighbor discovery-settings
+set discover-interface-list=!dynamic
+/ip address
+add address=192.168.16.1/24 comment=Primary interface=bridge-primary network=\
+    192.168.16.0
+add address=192.168.17.1/24 comment=Secondary interface=\
+    bridge-secondary network=192.168.17.0
+/ip dhcp-server network
+add address=192.168.16.0/24 dns-server=192.168.16.254 domain=cmsssnsw.local \
+    gateway=192.168.16.254 netmask=24
+add address=192.168.17.0/24 dns-server=1.1.1.1 gateway=192.168.17.254 \
+    netmask=24
+/system clock
+set time-zone-name=Australia/Sydney
+/system identity
+set name=sw01-foldback-poe
+/system routerboard settings
+set boot-os=router-os
