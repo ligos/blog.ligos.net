@@ -174,8 +174,8 @@ Here's what I plan to discuss in coming posts:
 
 * **[Failure Modes](/2021-05-13/Long-Term-Archiving-2-Failure-Modes.html)**: the different ways data can be lost.
 * **[Collecting Data](/2021-06-04/Long-Term-Archiving-3-Capturing-Data.html)**: what data will I archive and how will I get my hands on it.
-* **Access Patterns**: the way you to need to access data determines how it gets stored.
-* **Storage Options**: the many ways you can store data - hard copies, on-site, cloud, archives.
+* **[Access Patterns](/2021-08-07/Long-Term-Archiving-4-Access-Patterns.html)**: the way you to need to access data determines how it gets stored.
+* **[Storage Options](/2021-10-09/Long-Term-Archiving-5-Platform-Options.html)**: the many ways you can store data - hard copies, on-site, cloud, archives.
 * **Storage Choices**: the actual way I'll be storing data.
 * **File Formats**: which ones are likely to survive 45+ years.
 * **Organising Data**: how to organise data so its self-documenting and can be connected to other parts.
