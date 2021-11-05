@@ -69,7 +69,7 @@ var randBetweenZeroTo9 = rand.Next(10);     // 10 possiblities from 0..9
 var randFromThreeTo10 = rand.Next(3, 10);   // 7 possibilities from 3..9
 ```
 
-I've already implemented this in [makemeapassword.org](https://bitbucket.org/ligos/makemeapassword/src/c976760afc56efd80124f10ca72a03a8c12852d7/MakeMeAPassword.Web/Services/RandomService.cs?at=default&fileviewer=file-view-default), but there was a little refactoring in order.
+I've already implemented this in [makemeapassword.org](https://github.com/ligos/readablepassphrasegenerator/blob/master/trunk/ReadablePassphrase.Core/Random/RandomSource.cs), but there was a little refactoring in order.
 
 ```
 public static uint GetRandomUInt32(this IRandomNumberGenerator generator)
@@ -320,7 +320,7 @@ I'll investigate how much I can mitigate and improve this in the future.
 
 We've added an API to generate random numbers to make the core Fortuna / Terninger PRNG more useful to application developers.
 
-You can see the [actual code in BitBucket](https://bitbucket.org/ligos/terninger/src/562a727372c1e348daa534338e94623e3b6c7094/Terninger/RandomNumberExtensions.cs?at=default&fileviewer=file-view-default).
+You can see the [actual code in GitHub](https://github.com/ligos/terninger/blob/1e31437096a16959114ac3e0ec335287afec2363/Terninger/RandomNumberExtensions.cs).
 
 
 The next step will be to allow customising the PRNG.

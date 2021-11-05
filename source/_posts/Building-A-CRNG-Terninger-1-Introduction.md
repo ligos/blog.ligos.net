@@ -23,9 +23,9 @@ An implementation of Fortuna in c#, with added extras.
 I've been bitten by uninitialised or poor random number generators in the past.
 
 It's never fun when you copy two public keys into your source code (one for staging, one for production) and notice they are identical.
-Even less fun when you get an email late at night saying your [KeePass plugin for generating Readable Passphrases](https://bitbucket.org/ligos/readablepassphrasegenerator) is making the same passphrases on different computers.
+Even less fun when you get an email late at night saying your [KeePass plugin for generating Readable Passphrases](https://github.com/ligos/readablepassphrasegenerator) is making the same passphrases on different computers.
 And then staying up late to make "oh crap, update now" release.
-And worst of all, telling people [all their passphrases from the last 4 years are potentially tainted](https://bitbucket.org/ligos/readablepassphrasegenerator/wiki/0.17.0-Fix-for-Non-Random-Passphrases).
+And worst of all, telling people [all their passphrases from the last 4 years are potentially tainted](https://github.com/ligos/readablepassphrasegenerator/wiki/0.17.0-Fix-for-Non-Random-Passphrases).
 
 I've also written my own random number generator for [makemeapassword.org](https://makemeapassword.org), which mixes random data from various sources (and was not affected by the KeePass bug, for that very reason).
 But it's a home grown generator, and with all things cryptography, you should really leave it to the experts.

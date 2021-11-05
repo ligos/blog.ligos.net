@@ -494,7 +494,7 @@ Although its trivial for a malicious source to implement the right interface, so
 The accumulator has been implemented and does everything Fortuna requires, plus more.
 It even produces new seed material to send to the `CypherBasedPrngGenerator`, which would make the PRNG crypto safe.
 
-You can see the [actual code in BitBucket](https://bitbucket.org/ligos/terninger/src/e19b7edc332691937d45a9f1b81282f668aaace4/Terninger/Accumulator/EntropyAccumulator.cs?at=default).
+You can see the [actual code in GitHub](https://github.com/ligos/terninger/tree/83737e75948013d4bbee7ec0f21f38a0863320e5).
 
 Next up, we'll implement some basic entropy sources (very similar to the *cheap entropy* already generated). 
 And the key component to connect all our objects together and make them useful: a scheduler to do all the things which need *doing*.

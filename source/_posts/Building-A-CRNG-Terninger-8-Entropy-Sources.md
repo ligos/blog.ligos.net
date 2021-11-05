@@ -453,7 +453,7 @@ C# doesn't have async constructors though, so this will become a `static IEntrop
 Now we have a variety of entropy sources to feed into the accumulator and generate highly unpredictable seed material for the `CypherBasedPrngGenerator`.
 Effectively, we have all the components Fortuna requires!
 
-You can see the [actual code in BitBucket](https://bitbucket.org/ligos/terninger/src/72585374f20604c961829d91dab94bdc23f6d446/Terninger/EntropySources/?at=default).
+You can see the [actual code in GitHub](https://github.com/ligos/terninger/tree/df0d1b8f924b6b5d33fc47d11e40476830318504).
 
 Next up, we'll implement a *scheduler* which will be responsible for doing things.
 That is, it will joining the entropy sources to the accumulator and re-seed the actual generator at regular intervals. 

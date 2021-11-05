@@ -399,8 +399,8 @@ The pattern is a) create a singleton `PooledEntropyCprngGenerator`, b) remember 
 We now have a usable random generator based on Fortuna.
 And its in use in at least one app!
 
-You can see the [actual Terninger code in BitBucket](https://bitbucket.org/ligos/terninger/src/12a95faff94039b6a520932d35defb1ae7fa5999/Terninger/?at=default).
-And the [code for makemeapassword.ligos.net](https://bitbucket.org/ligos/makemeapassword/src/d39f2c1f46aa6de7ce25284f07258d6f55573f20/MakeMeAPassword.Web/Services/RandomService.cs?at=default&fileviewer=file-view-default) as well.
+You can see the [actual Terninger code in GitHub](https://github.com/ligos/terninger/tree/5a4196f0a64b06b809af0711041805d4800d6b97).
+And the [code for makemeapassword.ligos.net](https://github.com/ligos/MakeMeAPassword/blob/master/MakeMeAPassword.Web/Services/RandomService.cs) as well.
 
 Next up, .NET Standard and nuget.
 

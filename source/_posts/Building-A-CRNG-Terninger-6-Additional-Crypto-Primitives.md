@@ -190,7 +190,7 @@ A list of validation criteria:
 
 ### Additional (Cheap) Entropy
 
-A rather embarrassing problem I ran into with my [ReadablePassphrase KeePass plugin](https://bitbucket.org/ligos/readablepassphrasegenerator/wiki/0.17.0-Fix-for-Non-Random-Passphrases) was the random number generator got disposed when I didn't expect, but kept on producing predictable random numbers (basically from a zero seed).
+A rather embarrassing problem I ran into with my [ReadablePassphrase KeePass plugin](https://github.com/ligos/readablepassphrasegenerator/wiki/0.17.0-Fix-for-Non-Random-Passphrases) was the random number generator got disposed when I didn't expect, but kept on producing predictable random numbers (basically from a zero seed).
 One way to mitigate this is to allow a source of entropy to be injected into the re-key events.
 (The other way is for the generator to throw an exception when disposed, but that doesn't make for a very exciting blog post).
 
@@ -431,7 +431,7 @@ So not just yet.
 
 We've added various options to the core PRNG, allowing for different crypto primitives (cyphers and hash functions) and incorporation of some cheap, low quality entropy.
 
-You can see the [actual code in BitBucket](https://bitbucket.org/ligos/terninger/src/0f237a68972316c037845d6651a2ddd52ec36c95/Terninger/Generator/CypherBasedPrngGenerator.cs?at=default).
+You can see the [actual code in GitHub](https://github.com/ligos/terninger/tree/ee1bbe4ad097dbe1786249d551830316764d149f).
 
 We're going to start building the *accumulator* part of Fortuna.
 That is, the part that gathers entropy, mixes it up and uses that to regularly re-seed the generator.

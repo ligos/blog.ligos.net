@@ -279,13 +279,13 @@ And that includes excessive comments for sake of public demonstration.
 I've got some basic unit test to establish the generator is working as expected.
 Or at least not doing anything totally stupid.
 
-They're available with the rest of the code in the [BlockCypherTests](https://bitbucket.org/ligos/terninger/src/5a45f8d91298d7b6d80144fa788efe66725c892d/Terninger.Test/BlockCypherTests.cs?at=default&fileviewer=file-view-default) class.
+They're available with the rest of the code in the [BlockCypherTests](https://github.com/ligos/terninger/blob/c18d9c09a7b0edcd532cf29761a1e4964ced04aa/Terninger.Test/BlockCypherTests.cs) class.
 
 ### BitBucket Repository
 
-I'll be making the source available for [Turninger in BitBucket](https://bitbucket.org/ligos/terninger/overview).
+I'll be making the source available for [Turninger in GitHub](https://github.com/ligos/terninger).
 
-[Commit for this post](https://bitbucket.org/ligos/terninger/commits/5a45f8d91298d7b6d80144fa788efe66725c892d) and implementation of [BlockCypherCprngGenerator](https://bitbucket.org/ligos/terninger/src/ce0d6f6288c6e7d4cd7e2bdf91c594c81f76ac32/Terninger/Generator/BlockCypherCprngGenerator.cs?at=default&fileviewer=file-view-default).
+[Commit for this post](https://github.com/ligos/terninger/tree/c18d9c09a7b0edcd532cf29761a1e4964ced04aa) and implementation of [BlockCypherCprngGenerator](https://github.com/ligos/terninger/blob/c18d9c09a7b0edcd532cf29761a1e4964ced04aa/Terninger/Generator/BlockCypherCprngGenerator.cs).
 
 There may be other projects and classes, depending on what I've been up to.
 Consider them a sneak peak into what I'm planning.

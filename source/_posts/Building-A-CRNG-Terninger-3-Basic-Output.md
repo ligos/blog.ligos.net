@@ -83,7 +83,7 @@ We start by loading, initialising and opening our inputs and outputs.
 The core loop is fill a buffer with random bytes and then writes that buffer to the output stream.
 We use a fixed size buffer until the last request, where we allocate a smaller buffer for whatever is left over.
 
-You can see the [actual code in BitBucket](https://bitbucket.org/ligos/terninger/src/1757d1c3de1a3891e4e2f662c36c2f859dd968f3/Terninger.Console/Program.cs?fileviewer=file-view-default), which has some more stuff going on (to print nice things to the console, and handle cancellation via `CTRL+C` gracefully).
+You can see the [actual code in GitHub](https://github.com/ligos/terninger/blob/bbf6123d779df55cf7e8388aeab82afcc8a9665e/Terninger.Console/Program.cs), which has some more stuff going on (to print nice things to the console, and handle cancellation via `CTRL+C` gracefully).
 
 
 ### Output Writer
@@ -193,7 +193,7 @@ Four options this time:
 
 ### Other Boilerplate
 
-You can see the other [bits and pieces in BitBucket](https://bitbucket.org/ligos/terninger/src/1757d1c3de1a3891e4e2f662c36c2f859dd968f3/Terninger.Console/Program.cs?fileviewer=file-view-default).
+You can see the other [bits and pieces in GitHub](https://github.com/ligos/terninger/tree/bbf6123d779df55cf7e8388aeab82afcc8a9665e).
 They aren't particularly relevant to getting random bytes, but are rather important to make a functional console app.
 
 * A top level exception handler that wraps everything in a giant try-catch block.
@@ -225,7 +225,7 @@ With no argument, we use a null seed, hex output and generate 64 bytes.
 
 Because of the fixed seed, anyone who runs Terninger should get the same "random" bytes.
 Be this a warning to anyone who things things are random just because they look like garbage!
-(This kind of thing has caused me [significant pain](https://bitbucket.org/ligos/readablepassphrasegenerator/wiki/0.17.0-Fix-for-Non-Random-Passphrases)).
+(This kind of thing has caused me [significant pain](https://github.com/ligos/readablepassphrasegenerator/wiki/0.17.0-Fix-for-Non-Random-Passphrases)).
 
 ```
 > Terninger.Console.exe -s 1 -c 512

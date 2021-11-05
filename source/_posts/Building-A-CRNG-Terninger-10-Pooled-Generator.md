@@ -234,7 +234,7 @@ Less major work includes:
 We now have a usable random generator based on Fortuna.
 And a console binary people can use to get randomness from it.
 
-You can see the [actual code in BitBucket](https://bitbucket.org/ligos/terninger/src/ad9fd43fa2fdbe8b2471bd4e18fbae9fc29aa62e/Terninger/?at=default).
+You can see the [actual code in GitHub](https://github.com/ligos/terninger/tree/5a4196f0a64b06b809af0711041805d4800d6b97).
 
 Next up, we will make a few of the improvements listed in *Future Work*.
 And then, once I'm comfortable, consume the generator in a real app: [makemeapassword.ligos.net](https://makemeapassword.ligos.net).

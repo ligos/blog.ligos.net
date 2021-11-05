@@ -488,7 +488,7 @@ Now we can produce cryptographically secure random data using `PooledEntropyCprn
 We've done it!
 A minimum viable CPRNG!
 
-You can see the [actual code in BitBucket](https://bitbucket.org/ligos/terninger/src/58f6b757d3a9127ae9f03b27bb17702e5f6f5d23/Terninger/Generator/PooledEntropyCprngGenerator.cs?at=default&fileviewer=file-view-default).
+You can see the [actual code in GitHub](https://github.com/ligos/terninger/blob/5fa9f2c725abb9eeb3c8b4072eb5ce2b8fcf8312/Terninger/Generator/PooledEntropyCprngGenerator.cs).
 
 Next up, we'll re-work the console app to be able to use either the PRNG or CPRNG and output random data. 
 So we can actually see the random-ness we've worked so hard to create.

@@ -20,7 +20,7 @@ Reading from entropy sources asyncronously.
 
 ## Background
 
-You can [read other Turninger posts](/tags/Terninger-Series/) which outline my progress building a the [Fortuna CPRNG](https://www.schneier.com/academic/fortuna/), or see [the source code](https://bitbucket.org/ligos/terninger/src/default/).
+You can [read other Turninger posts](/tags/Terninger-Series/) which outline my progress building a the [Fortuna CPRNG](https://www.schneier.com/academic/fortuna/), or see [the source code](https://github.com/ligos/terninger).
 
 So far, I've put Terninger into production in [makemeapassword.ligos.net](https://makemeapassword.ligos.net). 
 
@@ -341,7 +341,7 @@ Terninger's initialisation performance is greatly improved.
 It used to take 10-20 seconds to gather enough entropy for the first key, even longer in the days before NBN.
 Now, 2 seconds is a long initialisation time!
 
-You can see the [actual Terninger code in BitBucket](https://bitbucket.org/ligos/terninger/src/default/). 
+You can see the [actual Terninger code in GitHub](https://github.com/ligos/terninger/). 
 And the main [NuGet package](https://www.nuget.org/packages/Terninger).
 
 Next up: serialise the internal state of the generator, and reload it during initialisation.

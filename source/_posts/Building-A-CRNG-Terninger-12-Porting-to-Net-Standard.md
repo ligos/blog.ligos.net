@@ -256,7 +256,7 @@ Unless you enjoy errors like "this assembly contains no tests".
 
 ### NuGet vs Project References
 
-An issue I had with [ReadablePassphrase](https://bitbucket.org/ligos/readablepassphrasegenerator) was NuGet vs Project references.
+An issue I had with [ReadablePassphrase](https://github.org/ligos/readablepassphrasegenerator) was NuGet vs Project references.
 If I'm producing NuGets, then all references need to be NuGet `<PackageReference>` elements in the project file.
 But the development and debugging experience of that isn't brilliant.
 
@@ -369,7 +369,7 @@ I guess this is why you need to fix bugs, improve code, **and** implement new fe
 
 Terninger is now available to anywhere .NET Standard is (which means .NET Core on Linux and Windows, plus the regular .NET Desktop Framework on Windows)!
 
-You can see the [actual Terninger code in BitBucket](https://bitbucket.org/ligos/terninger/src/default/). 
+You can see the [actual Terninger code in GitHub](https://github.com/ligos/terninger/tree/681df85417de1ecb1c77d810122e3c4b97c05079). 
 And the main [NuGet package](https://www.nuget.org/packages/Terninger).
 
 Next up: parallel entropy source polling, and maybe some more entropy sources.
