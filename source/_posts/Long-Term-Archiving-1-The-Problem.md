@@ -185,7 +185,6 @@ Here's what I plan to discuss in coming posts:
 * **[Implementation](/2021-10-29/Long-Term-Archiving-6-Implementation.html)**: the actual way I'll be storing data.
 * **File Formats**: which ones are likely to survive 45+ years.
 * **Organising Data**: how to organise data so its self-documenting and can be connected to other parts.
-* **Encryption**: do you encrypt or not?
 
 
 ## Conclusion
