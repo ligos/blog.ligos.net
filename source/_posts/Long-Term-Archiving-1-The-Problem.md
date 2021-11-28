@@ -183,7 +183,7 @@ Here's what I plan to discuss in coming posts:
 * **[Access Patterns](/2021-08-07/Long-Term-Archiving-4-Access-Patterns.html)**: the way you to need to access data determines how it gets stored.
 * **[Storage Options](/2021-10-09/Long-Term-Archiving-5-Platform-Options.html)**: the many ways you can store data - hard copies, on-site, cloud, archives.
 * **[Implementation](/2021-10-29/Long-Term-Archiving-6-Implementation.html)**: the actual way I'll be storing data.
-* **File Formats**: which ones are likely to survive 45+ years.
+* **[File Formats](/2021-11-28/Long-Term-Archiving-7-File-Formats.html)**: which ones are likely to survive 45+ years.
 * **Organising Data**: how to organise data so its self-documenting and can be connected to other parts.
 
 
