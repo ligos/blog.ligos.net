@@ -184,7 +184,7 @@ Here's what I plan to discuss in coming posts:
 * **[Storage Options](/2021-10-09/Long-Term-Archiving-5-Platform-Options.html)**: the many ways you can store data - hard copies, on-site, cloud, archives.
 * **[Implementation](/2021-10-29/Long-Term-Archiving-6-Implementation.html)**: the actual way I'll be storing data.
 * **[File Formats](/2021-11-28/Long-Term-Archiving-7-File-Formats.html)**: which ones are likely to survive 45+ years.
-* **Organising Data**: how to organise data so its self-documenting and can be connected to other parts.
+* **[Organising Data](/2022-02-25/Long-Term-Archiving-8-Organising-Data.html)**: how to organise data so its self-documenting and can be connected to other parts.
 
 
 ## Conclusion
