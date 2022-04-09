@@ -7,19 +7,19 @@ comments: false
 
 ## About the Author
 
-I'm Murray. A thirty something male, living in Sydney, Australia.
+I'm Murray. A forty something male, living in Sydney, Australia.
   
-I'm a husband, father, brother, evangelical Christian, Bible study leader, occasional preacher, programmer, database administrator, performance analyst, general IT assistant for family.
+I'm a husband, father, brother, evangelical Christian, Bible study leader, occasional preacher, Church Warden, programmer, database administrator, performance analyst, general IT assistant for family.
 And probably a whole bunch of other titles, but that will do for now. 
 
-Professionally, I work for [Far Edge Technology](http://www.faredge.com.au), mostly developing [Wise Owl Legal](http://www.wiseowllegal.com.au).  
+Professionally, I work for [WiseTech Global](http://wisetechglobal.com) developing software for the logistics industry.  
 
-I serve at [Wenty Anglican Church](http://www.wentworthville.anglican.asn.au/) where I was converted as a young adult.
+I serve at [Wenty Anglican Church](http://wentyanglican.org.au/) where I was converted as a young adult.
 
-I play computer games infrequently by myself, and regularly with my son (who is obsessed with [lego games](https://en.wikipedia.org/wiki/Lego_Marvel_Super_Heroes)).
+I play computer games infrequently by myself, and regularly with my sons (Minecraft, Roblox, Fortnite).
 
 I maintain a small, if unusually robust, home network.
-Which hosts this blog and [MakeMeAPassword.org](https://makemeapassword.org).
+Which hosts this blog and [MakeMeAPassword.ligos.net](https://makemeapassword.ligos.net).
 
 
 ## Financial Support
@@ -40,7 +40,7 @@ Whole source code files, or even projects, will come with their own license, cle
 
 The content on this site represents the personal views and works of Murray Grant only.
 It does not represent the views, policies, opinions or works of any company I have worked for past, present or future.
-This includes (and is not limited to) [Wise Owl Legal](http://www.wiseowllegal.com.au/), [Far Edge Technology](http://faredge.com.au/) and [Innovent Software](http://www.innoventsoftware.com.au/).
+This includes (and is not limited to) [WiseTech Global](https://wisetechglobal.com/), [Wise Owl Legal](http://www.wiseowllegal.com.au/), [Far Edge Technology](http://faredge.com.au/) and [Innovent Software](http://www.innoventsoftware.com.au/).
 
 ## Terms Of Use
 
