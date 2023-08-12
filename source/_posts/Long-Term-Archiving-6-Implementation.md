@@ -48,7 +48,7 @@ I consider OneDrive and Google very reliable cloud providers.
 But I take a weekly snapshot of OneDrive using [RClone](https://rclone.org/).
 GMail is more problematic to backup automatically, so I'm content to download a snapshot every couple of years.
 
-Data on the TrueNAS is backed up to [BackBlaze B2](https://www.backblaze.com/b2/cloud-storage.html) cloud storage.
+Data on the TrueNAS is backed up to [BackBlaze B2](https://www.backblaze.com/cloud-storage) cloud storage.
 TrueNAS has a web front end to RClone that makes it much easier to understand and use.
 Cost for B2 is ~AUD $6 / month with my current usage of ~700GB.
 

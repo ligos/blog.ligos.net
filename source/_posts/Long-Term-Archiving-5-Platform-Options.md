@@ -69,7 +69,7 @@ It has conventions for creating a filesystem-like view.
 And adds permissions, storage tiers, and various other features.
 You can "put" data into a "bucket", and then retrieve it later by its name.
 
-Alternatives: [Azure Blob Storage](https://azure.microsoft.com/en-au/services/storage/blobs/), [Backblaze B2](https://www.backblaze.com/b2/cloud-storage.html).
+Alternatives: [Azure Blob Storage](https://azure.microsoft.com/en-au/services/storage/blobs/), [Backblaze B2](https://www.backblaze.com/cloud-storage).
 
 **Capital Cost**: $0
 
