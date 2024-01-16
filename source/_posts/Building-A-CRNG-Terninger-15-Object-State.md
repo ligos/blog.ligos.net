@@ -274,21 +274,7 @@ IEnumerable<NamespacedPersistentItem> GetCurrentState(PersistentEventType eventT
 }
 ```
 
-The **second problem** is dealt with partially in `EntropyPool.Initialise()`: we don't directly load the data from disk, but also include some extra entropy.
-
-```cs
-void Initialise(IDictionary<string, NamespacedPersistentItem> state)
-{
-  if (state.TryGetValue("EntropyHash", out var entropyHashValue))
-  {
-    AccumulateBlock(entropyHashValue.Value, entropyHashValue.Value.Length);
-    var extraEntropy = PortableEntropy.Get32();
-    AccumulateBlock(extraEntropy, extraEntropy.Length);
-  }
-}
-```
-
-There is another mitigation for the second problem which I'll discuss in the next post.
+I'll address the **second problem** in the next post.
 
 But I will note one thing which _won't_ work: **file security bits / ACLs**.
 While using some kind of file system based security might mitigate the problem, it can't be relied upon - perhaps the state is being stored somewhere with no security.
