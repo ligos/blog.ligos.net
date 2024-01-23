@@ -1,6 +1,7 @@
 ---
 title: The Reliability of Optical Disks
 date: 2022-04-02
+updated: 2024-01-23
 tags:
 - Backup
 - Archive
@@ -62,7 +63,7 @@ This high reliability is what drove me back to optical disks in 2021 - BluRay di
 
 The [45+ year storage requirement for church compliance data](/2021-04-11/Long-Term-Archiving-1-The-Problem.html) made me re-think how my backups would survive in the long term.
 I wasn't comfortable with HDDs surviving that long, nor anything stored in the cloud.
-Tapes are cheap, but their drives are expense and my only experience with them is from 2002.
+Tapes are cheap, but their drives are expensive and my only experience with them is from 2002.
 It was only when I tested these CDs and DVDs that I realised optical was a contender!
 And further research showed that BluRay disks were readily available at a reasonable price.
 
@@ -164,6 +165,9 @@ I tested all disks this way.
 My **heat test** is placing disks in a) my car (which is parked such that it has ~4 hours per day of sunlight) which acts as a greenhouse, b) my ceiling cavity (which is not insulated and can reach over 50℃ in Summer), and c) my freezer (which should be around -18℃).
 I only tested the BluRay M-Discs for heat.
 
+Updated in January 2024: Note that heat tests expose disks to some indirect light; while the cold test is stored in a dark freezer - I suspect this means the freezer disk will end up lasting longer.
+Only time will tell.
+
 **The TL;DR results**: keep optical disks out of direct sunlight and you should be good for a long time.
 
 <img src="/images/The-Reliability-Of-Optical-Disks/tested-to-destruction-dvd-and-bluray-and-mdisc.jpg" class="" width=300 height=300 alt="DVD, BluRays and M-Disc - All Tested to Destruction" />
@@ -189,9 +193,19 @@ That's not quite what the manufacturer claims, but close enough - and confirms M
 
 Others have done similar [test to destruction for M-disc media](https://www.microscopy-uk.org.uk/mag/artsep16/mol-mdisc-review.html) which support my results.
 
-**Tests for heat / cold** started in May 2021, and remain ongoing without failure (the 2021-2022 Summer was nowhere near as hot as previous year, so I suspect this test will continue for another year at least).
+**Tests for heat / cold** started in May 2021, and remain ongoing without failure (the 2021-2022 Summer was nowhere near as hot as previous year, so I suspect this test will continue for another year at least. [Temperature statistics for Sydney](https://reg.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=36&p_display_type=dataFile&p_stn_num=066037)).
 
-The take away is: keep optical disks out of direct sunlight; even better in total darkness.
+Last updated _January 2024_:
+
+Location              | Has it Failed?  | Days Before Failure | Failure Mode
+----------------------|-----------------|---------------------|--------------
+Freezer (cold)        | No              | 977+                | N/a
+Car (heat)            | No              | 977+                | N/a
+Ceiling Cavity (heat) | No              | 977+                | N/a
+
+I'll update this table from time to time, as I check the disks.
+
+The take away is: **keep optical disks out of direct sunlight**; even better in total darkness.
 Heat / cold seems to be less critical.
 
 ## Always Test
