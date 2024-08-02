@@ -10,7 +10,7 @@ tags:
 categories: Technical
 ---
 
-First step to buying installing home batteries: gathering data.
+First step to installing home batteries: gathering data.
 
 <!-- more --> 
 
@@ -175,6 +175,6 @@ So far, I've gathered data about the details of my power usage.
 From this information, I have chosen the high value, low draw appliances which I'd like battery backup for: lighting, fridge & freezer, networking, and servers.
 And, I know approximately how much battery capacity I need to run overnight: at least 8kWhs.
 
-Next up: choosing and purchasing batteries.
+Next up: [choosing and purchasing batteries](/2024-08-02/Installing-Home-Batteries-2.html).
 
 
