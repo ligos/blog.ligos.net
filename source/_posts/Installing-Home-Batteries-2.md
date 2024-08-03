@@ -99,6 +99,8 @@ And how the unit looks, when I was testing it (before any electrical work).
 
 <img src="/images/Installing-Home-Batteries-2/AC200L-B300-powered-on-and-under-test.jpg" class="" width=300 height=300 alt="AC200L and B300 stacked on top of each other, powered on, charging and under test." />
 
+<img src="/images/Installing-Home-Batteries-2/AC200L-running-during-electrical-work.jpg" class="" width=300 height=300 alt="AC200L powering my home office, fridge and freezer during electrical work." />
+
 Oh... and I decided I'd need two to safely cover my needs!
 
 The AC200L cost $2,400, and the B300 cost $2,500, with some end of financial year discounts. 
@@ -238,6 +240,9 @@ I tend to keep an eye on SOC Trend, and ignore the others, because Home Assistan
 
 I'm not about to void warranties or destroy my brand new batteries. [But someone else has](https://www.youtube.com/watch?v=vfDSTvmsAbk) - yay for YouTube!
 
+Oh, and I'm very glad I didn't try to roll my own after watching that video. 
+There are _a lot_ of smarts in the AC200L.
+
 ## Electrical Work
 
 It's all good to have batteries.
@@ -273,6 +278,12 @@ And two sockets which run back up to the switchboard.
 The supplied cables are used for grid charging, and some short extension leads run from one of the AC outlets back to the switchboard.
 
 <img src="/images/Installing-Home-Batteries-2/UPS-feeds.jpg" class="" width=300 height=300 alt="Feed to Circuits (left), and UPS supply (right)" />
+
+The installation took a day and a half.
+Most of that first day the power was off while the electrician did his thing.
+And I was able to run everything from the AC200L!
+
+<img src="/images/Installing-Home-Batteries-2/AC200L-running-during-electrical-work.jpg" class="" width=300 height=300 alt="AC200L powering my home office, fridge and freezer during electrical work." />
 
 ## Installed Batteries
 
