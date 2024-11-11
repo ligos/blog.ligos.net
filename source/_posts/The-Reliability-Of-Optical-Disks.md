@@ -195,8 +195,6 @@ Others have done similar [test to destruction for M-disc media](https://www.micr
 
 **Tests for heat / cold** started in May 2021, and remain ongoing without failure (the 2021-2022 Summer was nowhere near as hot as previous year, so I suspect this test will continue for another year at least. [Temperature statistics for Sydney](https://reg.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=36&p_display_type=dataFile&p_stn_num=066037)).
 
-Last updated _January 2024_:
-
 Location              | Has it Failed?  | Days Before Failure | Failure Mode
 ----------------------|-----------------|---------------------|--------------
 Freezer (cold)        | No              | 1201+               | N/a
