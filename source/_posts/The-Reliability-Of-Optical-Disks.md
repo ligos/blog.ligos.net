@@ -1,7 +1,7 @@
 ---
 title: The Reliability of Optical Disks
 date: 2022-04-02
-updated: 2024-01-23
+updated: 2024-11-11
 tags:
 - Backup
 - Archive
@@ -199,11 +199,11 @@ Last updated _January 2024_:
 
 Location              | Has it Failed?  | Days Before Failure | Failure Mode
 ----------------------|-----------------|---------------------|--------------
-Freezer (cold)        | No              | 977+                | N/a
-Car (heat)            | No              | 977+                | N/a
-Ceiling Cavity (heat) | No              | 977+                | N/a
+Freezer (cold)        | No              | 1201+               | N/a
+Car (heat)            | No              | 1201+               | N/a
+Ceiling Cavity (heat) | No              | 1201+               | N/a
 
-I'll update this table from time to time, as I check the disks.
+I'll update this table from time to time, as I check the disks (last updated 11th Nov 2024).
 
 The take away is: **keep optical disks out of direct sunlight**; even better in total darkness.
 Heat / cold seems to be less critical.
