@@ -197,11 +197,11 @@ Others have done similar [test to destruction for M-disc media](https://www.micr
 
 Location              | Has it Failed?  | Days Before Failure | Failure Mode
 ----------------------|-----------------|---------------------|--------------
-Freezer (cold)        | No              | 1201+               | N/a
-Car (heat)            | No              | 1201+               | N/a
-Ceiling Cavity (heat) | No              | 1201+               | N/a
+Freezer (cold)        | No              | 1370+               | N/a
+Car (heat)            | No              | 1370+               | N/a
+Ceiling Cavity (heat) | No              | 1370+               | N/a
 
-I'll update this table from time to time, as I check the disks (last updated 11th Nov 2024).
+I'll update this table from time to time, as I check the disks (last updated 1st Mar 2025).
 
 The take away is: **keep optical disks out of direct sunlight**; even better in total darkness.
 Heat / cold seems to be less critical.
