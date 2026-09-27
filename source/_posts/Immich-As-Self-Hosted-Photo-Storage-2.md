@@ -1,6 +1,6 @@
 ---
 title: Immich as Self-Hosted Photo Storage - Part 2
-date: 
+date: 2026-09-27
 tags:
 - Debian
 - Photos
